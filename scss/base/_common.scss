@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    color:inherit !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0; /* Ensure no margin */
+    padding: 0; /* Ensure no padding */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    font-family: var(--primary-fonts);
+    background-color: var(--white-color);
+  }
+  
+  body {
+    font-size: 16px; /* Default font size */
+    
+    // Responsive font sizes for different screen widths
+    @media (max-width: 992px) { 
+      font-size: 14px; /* Font size for larger tablets and below */
+    }
+    
+    @media (max-width: 768px) { 
+      font-size: 13px; /* Font size for medium tablets and below */
+    }
+  
+    @media (max-width: 576px) { 
+      font-size: 12px; /* Font size for smaller mobile screens */
+    }
+  }
+
+.font-sm{
+  font-size:var(--font-sm);
+}
+p {
+    margin-bottom: 0;
+}
+
+.category-heading {
+    font-size: var(--font-xl);
+    font-weight: 600;
+}
+
+.heading-category{
+  text-align:center;
+  font-size:var(--font-xl);
+  font-weight: 600;
+}
+.heading-title{
+  font-size:var(--font-xl);
+  font-weight:600;
+}
+
+.text-center{
+  text-align:center;
+}
+
+
+.card-body {
+    font-size: var(--font-md);
+
+    a {
+        font-size: var(--font-md);
+    }
+}
+.line-down {
+  position: relative;
+
+  &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 100%;
+      width: 0;
+      height: 2px;
+      background-color:blue;
+      transition: 0.5s;
+  }
+
+  &:hover::before {
+      width: 100%;
+  }
+}
+
+.link-css{
+  color:rgb(51, 48, 48);
+  font-weight:600;
+  margin-block:20px;
+  text-align: center;
+  display:block;
+  &:hover{
+    color:blue;
+  }
+}
+
+.heading {
+    color: white;
+}
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows: 200px 200px 200px;
+  gap:5px;
+  img:first-child{
+    grid-column: 2 span;
+    grid-row:2 span;
+  }
+}
+
+.top-naving{
+  ul{
+    padding:0;
+    display:flex;
+    justify-content: space-between;
+    li{
+      padding:0;
+    }
+  }
+}
+
+.grey-text{
+  color:rgb(95, 92, 92);
+}
+
+.content-part{
+  p{
+    margin-block:10px;
+    font-size: var(--font-md);
+  }
+}
+
+
+
+
+.search {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  width: 600px;
+
+  .search-input {
+      width: 100%;
+  }
+
+
+  input {
+      border-radius: 0;
+      width: 100%;
+  }
+
+  button {
+      border-radius: 0;
+  }
+
+  select {
+      width: fit-content;
+      border-radius: 0;
+      font-size: var(--font-lg);
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (max-width: 992px) {
+    .search-input {
+          display: none !important;
+      }
+    }
+      select {
+          display: none !important;
+      }
+  }
+
+// carousel
+  .swiper-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.swiper-slide {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+
+.form-control{
+}
+.card-shadow {
+    padding: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index:10;
+    /* subtle shadow */
+    &:hover {
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+        /* deeper shadow on hover */
+        transform: translateY(-6px);
+        /* slight lift */
+    }
+}
+
+
+ .row, .col, .section, .search, .search-input {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  /* This part makes sure the full-width container is nice and spacious on large screens */
+.container {
+    width: 100%;
+    margin: 0 auto;  /* Centering content */
+    padding: 0 20px; /* Default space on both sides for larger screens */
+  }
+  
+  /* Now, let's deal with the responsiveness and remove space for smaller screens */
+  
+  @media (max-width: 1200px) {
+    .container {
+      padding: 0 15px; /* Slight space for larger tablets or small screens */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .container {
+      padding: 0 10px; /* Reducing space even more */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 5px; /* Almost no space */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      padding: 0 5px; /* Completely remove the space for mobile */
+    }
+  }
+  

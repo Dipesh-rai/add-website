@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <!-- bootstrap-file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap-icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <!-- keenwheeler carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+</head>
+
+<body>
+    <!-- header -section -->
+    <header>
+        <!-- topheader -->
+        <div class="topheader p-2">
+            <div class="container">
+                <div class="topheader-section d-flex justify-content-between align-items-center">
+                    <div class="tel">Telephone Enquiry:(+123) 123 456</div>
+                    <div class="top-right">
+                        <select name="" class='select-headerpart' id="">
+                            <option value="" disabled>Setting</option>
+                            <option value="">Setting 1</option>
+                            <option value="">Setting 2</option>
+                            <option value="">Setting 3</option>
+                        </select>
+                        <label>Currency:</label>
+                        <select name="" class='select-headerpart' id="">
+                            <option value="">USD</option>
+                            <option value="">RS</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mid header -->
+        <div class="second-header p-3">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="logo">
+                        <a href="">Booking System</a>
+                    </div>
+                    <div class="search d-flex">
+                        <select class="form-select form-select-lg" aria-label="Large select example">
+                            <option selected>All</option>
+                            <option value="1">Real State</option>
+                            <option value="2">Vehicles</option>
+                            <option value="3">Job</option>
+                        </select>
+                        <div class="search-input d-flex">
+                            <input type="text" class="form-control" aria-label="Text input with checkbox"
+                                placeholder='Search availability' />
+                            <button type="button" class="btn btn-primary"><i class="bi bi-search"></i></button>
+                        </div>
+
+
+                    </div>
+                    <div class="right-content">
+                        <div class="dropdown d-flex gap-2">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-cart-check-fill"></i>
+                            </button>
+                            <a href="" class="btn btn-outline-primary">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- nav part -->
+        <div class="third-header">
+            <div class="container">
+                <div class="right-header d-flex justify-content-between align-items-center">
+                    <div class="top-navbar">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="realstate.html">Real-estate</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="search d-flex">
+                        <select class="form-select form-select-lg" aria-label="Large select example">
+                            <option selected>All</option>
+                            <option value="1">Real State</option>
+                            <option value="2">Vehicles</option>
+                            <option value="3">Job</option>
+                        </select>
+                        <div class="search d-flex">
+                            <select class="form-select form-select-lg" aria-label="Large select example">
+                                <option selected>All</option>
+                                <option value="1">Real State</option>
+                                <option value="2">Vehicles</option>
+                                <option value="3">Job</option>
+                            </select>
+                            <div class="search-navbar d-flex">
+                                <input type="text" class="form-control" aria-label="Text input with checkbox"
+                                    placeholder='Search availability' />
+                                <button type="button" class="btn btn-primary"><i class="bi bi-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <i class="bi bi-list"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Real Estate Header -->
+    <header class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center border">
+                <div class="col-lg-6">
+                    <h1 class="fw-bold mb-3">Find Your Dream Property</h1>
+                    <p class="lead mb-4">Browse thousands of homes, apartments, and commercial properties for sale or
+                        rent.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h5 class="mb-3">Search Properties</h5>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="property-type" class="form-label">Property Type</label>
+                                        <select class="form-select" id="property-type">
+                                            <option selected>All Types</option>
+                                            <option>House</option>
+                                            <option>Apartment</option>
+                                            <option>Condo</option>
+                                            <option>Townhouse</option>
+                                            <option>Land</option>
+                                            <option>Commercial</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="location" class="form-label">Location</label>
+                                        <input type="text" class="form-control" id="location"
+                                            placeholder="City, state, or zip code">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="status" class="form-label">Status</label>
+                                        <select class="form-select" id="status">
+                                            <option selected>All</option>
+                                            <option>For Sale</option>
+                                            <option>For Rent</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="price-range" class="form-label">Price Range</label>
+                                        <select class="form-select" id="price-range">
+                                            <option selected>Any Price</option>
+                                            <option>$0 - $100,000</option>
+                                            <option>$100,000 - $250,000</option>
+                                            <option>$250,000 - $500,000</option>
+                                            <option>$500,000 - $1,000,000</option>
+                                            <option>$1,000,000+</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary w-100">Search Properties</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="py-4 border-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0"><strong>1,543</strong> properties found</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-md-end">
+                        <div class="me-3">
+                            <label for="sort-by" class="form-label mb-0 me-2">Sort by:</label>
+                            <select class="form-select form-select-sm d-inline-block w-auto" id="sort-by">
+                                <option selected>Featured</option>
+                                <option>Price: High to Low</option>
+                                <option>Price: Low to High</option>
+                                <option>Newest</option>
+                                <option>Bedrooms</option>
+                                <option>Bathrooms</option>
+                                <option>Square Feet</option>
+                            </select>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm active">
+                                <i class="bi bi-grid"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary btn-sm">
+                                <i class="bi bi-list"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Listing Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Filters Sidebar -->
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="mb-3">Advanced Filters</h5>
+
+                            <div class="mb-3">
+                                <label for="bedrooms" class="form-label">Bedrooms</label>
+                                <select class="form-select" id="bedrooms">
+                                    <option selected>Any</option>
+                                    <option>1+</option>
+                                    <option>2+</option>
+                                    <option>3+</option>
+                                    <option>4+</option>
+                                    <option>5+</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="bathrooms" class="form-label">Bathrooms</label>
+                                <select class="form-select" id="bathrooms">
+                                    <option selected>Any</option>
+                                    <option>1+</option>
+                                    <option>2+</option>
+                                    <option>3+</option>
+                                    <option>4+</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="square-feet" class="form-label">Square Feet</label>
+                                <select class="form-select" id="square-feet">
+                                    <option selected>Any</option>
+                                    <option>500+ sq ft</option>
+                                    <option>1,000+ sq ft</option>
+                                    <option>1,500+ sq ft</option>
+                                    <option>2,000+ sq ft</option>
+                                    <option>2,500+ sq ft</option>
+                                    <option>3,000+ sq ft</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="year-built" class="form-label">Year Built</label>
+                                <select class="form-select" id="year-built">
+                                    <option selected>Any</option>
+                                    <option>2020+</option>
+                                    <option>2010+</option>
+                                    <option>2000+</option>
+                                    <option>1990+</option>
+                                    <option>1980+</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="mb-3">Amenities</h5>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="air-conditioning">
+                                <label class="form-check-label" for="air-conditioning">
+                                    Air Conditioning
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="pool">
+                                <label class="form-check-label" for="pool">
+                                    Swimming Pool
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="garage">
+                                <label class="form-check-label" for="garage">
+                                    Garage
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="gym">
+                                <label class="form-check-label" for="gym">
+                                    Gym
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="fireplace">
+                                <label class="form-check-label" for="fireplace">
+                                    Fireplace
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="balcony">
+                                <label class="form-check-label" for="balcony">
+                                    Balcony
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="waterfront">
+                                <label class="form-check-label" for="waterfront">
+                                    Waterfront
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="pet-friendly">
+                                <label class="form-check-label" for="pet-friendly">
+                                    Pet Friendly
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="mb-3">Property Status</h5>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="for-sale" checked>
+                                <label class="form-check-label" for="for-sale">
+                                    For Sale
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="for-rent" checked>
+                                <label class="form-check-label" for="for-rent">
+                                    For Rent
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="new-construction">
+                                <label class="form-check-label" for="new-construction">
+                                    New Construction
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="foreclosure">
+                                <label class="form-check-label" for="foreclosure">
+                                    Foreclosure
+                                </label>
+                            </div>
+
+                            <div class="mt-4">
+                                <button class="btn btn-primary w-100">Apply Filters</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Listings -->
+                <div class="col-lg-9">
+                    <!-- Featured Property Ad -->
+                    <div class="card border-0 bg-primary bg-opacity-10 mb-4">
+                        <div class="card-body p-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 mb-3 mb-md-0">
+                                    <img src="https://plus.unsplash.com/premium_photo-1663089688180-444ff0066e5d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D"
+                                        class="img-fluid rounded" alt="Featured property">
+                                </div>
+                                <div class="col-md-6">
+                                    <span class="badge bg-primary mb-2">Featured Property</span>
+                                    <h5 class="mb-1">Luxury Waterfront Condos - Pre-Construction Pricing</h5>
+                                    <p class="mb-2"><i class="bi bi-geo-alt text-primary"></i> Miami Beach, FL</p>
+                                    <p class="mb-0">Exclusive waterfront condos with stunning ocean views. Limited time
+                                        pre-construction pricing available.</p>
+                                </div>
+                                <div class="col-md-2 text-md-end mt-3 mt-md-0">
+                                    <p class="text-primary fw-bold mb-2">From $599,000</p>
+                                    <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property Grid -->
+                    <div class="row g-4">
+                        <!-- Property 1 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card card-shadow">
+                                <div class="card listing-card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D"
+                                            class="card-img-top" alt="Luxury Apartment">
+                                        <span class="badge bg-success position-absolute top-0 start-0 m-3">For
+                                            Sale</span>
+                                        <span class="badge bg-primary position-absolute top-0 end-0 m-3">Featured</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="text-primary fw-bold">$450,000</span>
+                                            <span class="text-muted"><i class="bi bi-geo-alt"></i> New York</span>
+                                        </div>
+                                        <h5 class="card-title">
+                                            <a href="property-details.html"
+                                                class="text-decoration-none text-dark">Luxury Apartment with City
+                                                View</a>
+                                        </h5>
+                                        <p class="card-text text-muted">Modern 3-bedroom apartment with stunning city
+                                            views, fully renovated with high-end finishes.</p>
+                                        <div class="d-flex justify-content-between mt-3 font-sm">
+                                            <span><i class="bi bi-house-door"></i> 3 Beds</span>
+                                            <span><i class="bi bi-droplet"></i> 2 Baths</span>
+                                            <span><i class="bi bi-rulers"></i> 1,500 sqft</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center font-sm">
+                                        <span class="text-muted small">Listed 2 days ago</span>
+                                        <a href="property-details.html" class="btn btn-sm btn-outline-primary">View
+                                            Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card card-shadow">
+                                <div class="card listing-card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D"
+                                            class="card-img-top" alt="Luxury Apartment">
+                                        <span class="badge bg-success position-absolute top-0 start-0 m-3">For
+                                            Sale</span>
+                                        <span class="badge bg-primary position-absolute top-0 end-0 m-3">Featured</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="text-primary fw-bold">$450,000</span>
+                                            <span class="text-muted"><i class="bi bi-geo-alt"></i> New York</span>
+                                        </div>
+                                        <h5 class="card-title">
+                                            <a href="property-details.html"
+                                                class="text-decoration-none text-dark">Luxury Apartment with City
+                                                View</a>
+                                        </h5>
+                                        <p class="card-text text-muted">Modern 3-bedroom apartment with stunning city
+                                            views, fully renovated with high-end finishes.</p>
+                                        <div class="d-flex justify-content-between mt-3 font-sm">
+                                            <span><i class="bi bi-house-door"></i> 3 Beds</span>
+                                            <span><i class="bi bi-droplet"></i> 2 Baths</span>
+                                            <span><i class="bi bi-rulers"></i> 1,500 sqft</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center font-sm">
+                                        <span class="text-muted small">Listed 2 days ago</span>
+                                        <a href="property-details.html" class="btn btn-sm btn-outline-primary">View
+                                            Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card card-shadow">
+                                <div class="card listing-card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D"
+                                            class="card-img-top" alt="Luxury Apartment">
+                                        <span class="badge bg-success position-absolute top-0 start-0 m-3">For
+                                            Sale</span>
+                                        <span class="badge bg-primary position-absolute top-0 end-0 m-3">Featured</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="text-primary fw-bold">$450,000</span>
+                                            <span class="text-muted"><i class="bi bi-geo-alt"></i> New York</span>
+                                        </div>
+                                        <h5 class="card-title">
+                                            <a href="property-details.html"
+                                                class="text-decoration-none text-dark">Luxury Apartment with City
+                                                View</a>
+                                        </h5>
+                                        <p class="card-text text-muted">Modern 3-bedroom apartment with stunning city
+                                            views, fully renovated with high-end finishes.</p>
+                                        <div class="d-flex justify-content-between mt-3 font-sm">
+                                            <span><i class="bi bi-house-door"></i> 3 Beds</span>
+                                            <span><i class="bi bi-droplet"></i> 2 Baths</span>
+                                            <span><i class="bi bi-rulers"></i> 1,500 sqft</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center font-sm">
+                                        <span class="text-muted small">Listed 2 days ago</span>
+                                        <a href="property-details.html" class="btn btn-sm btn-outline-primary">View
+                                            Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card card-shadow">
+                                <div class="card listing-card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D"
+                                            class="card-img-top" alt="Luxury Apartment">
+                                        <span class="badge bg-success position-absolute top-0 start-0 m-3">For
+                                            Sale</span>
+                                        <span class="badge bg-primary position-absolute top-0 end-0 m-3">Featured</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="text-primary fw-bold">$450,000</span>
+                                            <span class="text-muted"><i class="bi bi-geo-alt"></i> New York</span>
+                                        </div>
+                                        <h5 class="card-title">
+                                            <a href="property-details.html"
+                                                class="text-decoration-none text-dark">Luxury Apartment with City
+                                                View</a>
+                                        </h5>
+                                        <p class="card-text text-muted">Modern 3-bedroom apartment with stunning city
+                                            views, fully renovated with high-end finishes.</p>
+                                        <div class="d-flex justify-content-between mt-3 font-sm">
+                                            <span><i class="bi bi-house-door"></i> 3 Beds</span>
+                                            <span><i class="bi bi-droplet"></i> 2 Baths</span>
+                                            <span><i class="bi bi-rulers"></i> 1,500 sqft</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center font-sm">
+                                        <span class="text-muted small">Listed 2 days ago</span>
+                                        <a href="property-details.html" class="btn btn-sm btn-outline-primary">View
+                                            Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card card-shadow">
+                                <div class="card listing-card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D"
+                                            class="card-img-top" alt="Luxury Apartment">
+                                        <span class="badge bg-success position-absolute top-0 start-0 m-3">For
+                                            Sale</span>
+                                        <span class="badge bg-primary position-absolute top-0 end-0 m-3">Featured</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="text-primary fw-bold">$450,000</span>
+                                            <span class="text-muted"><i class="bi bi-geo-alt"></i> New York</span>
+                                        </div>
+                                        <h5 class="card-title">
+                                            <a href="property-details.html"
+                                                class="text-decoration-none text-dark">Luxury Apartment with City
+                                                View</a>
+                                        </h5>
+                                        <p class="card-text text-muted">Modern 3-bedroom apartment with stunning city
+                                            views, fully renovated with high-end finishes.</p>
+                                        <div class="d-flex justify-content-between mt-3 font-sm">
+                                            <span><i class="bi bi-house-door"></i> 3 Beds</span>
+                                            <span><i class="bi bi-droplet"></i> 2 Baths</span>
+                                            <span><i class="bi bi-rulers"></i> 1,500 sqft</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center font-sm">
+                                        <span class="text-muted small">Listed 2 days ago</span>
+                                        <a href="property-details.html" class="btn btn-sm btn-outline-primary">View
+                                            Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card card-shadow">
+                                <div class="card listing-card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D"
+                                            class="card-img-top" alt="Luxury Apartment">
+                                        <span class="badge bg-success position-absolute top-0 start-0 m-3">For
+                                            Sale</span>
+                                        <span class="badge bg-primary position-absolute top-0 end-0 m-3">Featured</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="text-primary fw-bold">$450,000</span>
+                                            <span class="text-muted"><i class="bi bi-geo-alt"></i> New York</span>
+                                        </div>
+                                        <h5 class="card-title">
+                                            <a href="property-details.html"
+                                                class="text-decoration-none text-dark">Luxury Apartment with City
+                                                View</a>
+                                        </h5>
+                                        <p class="card-text text-muted">Modern 3-bedroom apartment with stunning city
+                                            views, fully renovated with high-end finishes.</p>
+                                        <div class="d-flex justify-content-between mt-3 font-sm">
+                                            <span><i class="bi bi-house-door"></i> 3 Beds</span>
+                                            <span><i class="bi bi-droplet"></i> 2 Baths</span>
+                                            <span><i class="bi bi-rulers"></i> 1,500 sqft</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center font-sm">
+                                        <span class="text-muted small">Listed 2 days ago</span>
+                                        <a href="property-details.html" class="btn btn-sm btn-outline-primary">View
+                                            Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card card-shadow">
+                                <div class="card listing-card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D"
+                                            class="card-img-top" alt="Luxury Apartment">
+                                        <span class="badge bg-success position-absolute top-0 start-0 m-3">For
+                                            Sale</span>
+                                        <span class="badge bg-primary position-absolute top-0 end-0 m-3">Featured</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="text-primary fw-bold">$450,000</span>
+                                            <span class="text-muted"><i class="bi bi-geo-alt"></i> New York</span>
+                                        </div>
+                                        <h5 class="card-title">
+                                            <a href="property-details.html"
+                                                class="text-decoration-none text-dark">Luxury Apartment with City
+                                                View</a>
+                                        </h5>
+                                        <p class="card-text text-muted">Modern 3-bedroom apartment with stunning city
+                                            views, fully renovated with high-end finishes.</p>
+                                        <div class="d-flex justify-content-between mt-3 font-sm">
+                                            <span><i class="bi bi-house-door"></i> 3 Beds</span>
+                                            <span><i class="bi bi-droplet"></i> 2 Baths</span>
+                                            <span><i class="bi bi-rulers"></i> 1,500 sqft</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center font-sm">
+                                        <span class="text-muted small">Listed 2 days ago</span>
+                                        <a href="property-details.html" class="btn btn-sm btn-outline-primary">View
+                                            Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card card-shadow">
+                                <div class="card listing-card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D"
+                                            class="card-img-top" alt="Luxury Apartment">
+                                        <span class="badge bg-success position-absolute top-0 start-0 m-3">For
+                                            Sale</span>
+                                        <span class="badge bg-primary position-absolute top-0 end-0 m-3">Featured</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="text-primary fw-bold">$450,000</span>
+                                            <span class="text-muted"><i class="bi bi-geo-alt"></i> New York</span>
+                                        </div>
+                                        <h5 class="card-title">
+                                            <a href="property-details.html"
+                                                class="text-decoration-none text-dark">Luxury Apartment with City
+                                                View</a>
+                                        </h5>
+                                        <p class="card-text text-muted">Modern 3-bedroom apartment with stunning city
+                                            views, fully renovated with high-end finishes.</p>
+                                        <div class="d-flex justify-content-between mt-3 font-sm">
+                                            <span><i class="bi bi-house-door"></i> 3 Beds</span>
+                                            <span><i class="bi bi-droplet"></i> 2 Baths</span>
+                                            <span><i class="bi bi-rulers"></i> 1,500 sqft</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center font-sm">
+                                        <span class="text-muted small">Listed 2 days ago</span>
+                                        <a href="property-details.html" class="btn btn-sm btn-outline-primary">View
+                                            Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card card-shadow">
+                                <div class="card listing-card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D"
+                                            class="card-img-top" alt="Luxury Apartment">
+                                        <span class="badge bg-success position-absolute top-0 start-0 m-3">For
+                                            Sale</span>
+                                        <span class="badge bg-primary position-absolute top-0 end-0 m-3">Featured</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="text-primary fw-bold">$450,000</span>
+                                            <span class="text-muted"><i class="bi bi-geo-alt"></i> New York</span>
+                                        </div>
+                                        <h5 class="card-title">
+                                            <a href="property-details.html"
+                                                class="text-decoration-none text-dark">Luxury Apartment with City
+                                                View</a>
+                                        </h5>
+                                        <p class="card-text text-muted">Modern 3-bedroom apartment with stunning city
+                                            views, fully renovated with high-end finishes.</p>
+                                        <div class="d-flex justify-content-between mt-3 font-sm">
+                                            <span><i class="bi bi-house-door"></i> 3 Beds</span>
+                                            <span><i class="bi bi-droplet"></i> 2 Baths</span>
+                                            <span><i class="bi bi-rulers"></i> 1,500 sqft</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center font-sm">
+                                        <span class="text-muted small">Listed 2 days ago</span>
+                                        <a href="property-details.html" class="btn btn-sm btn-outline-primary">View
+                                            Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Property 2 -->
+                        <!-- <div class="col-md-6 col-lg-4">
+                                <div class="card listing-card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Modern Townhouse">
+                                        <span class="badge bg-info position-absolute top-0 start-0 m-3">For Rent</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="text-primary fw-bold">$2,800/month</span>
+                                            <span class="text-muted"><i class="bi bi-geo-alt"></i> San Francisco</span>
+                                        </div>
+                                        <h5 class="card-title">
+                                            <a href="property-details.html" class="text-decoration-none text-dark">Modern Townhouse in Prime Location</a>
+                                        </h5>
+                                        <p class="card-text text-muted">Beautiful 2-bedroom townhouse with modern amenities, close to shopping, dining, and public transportation.</p>
+                                        <div class="d-flex justify-content-between mt-3">
+                                            <span><i class="bi bi-house-door"></i> 2 Beds</span>
+                                            <span><i class="bi bi-droplet"></i> 2.5 Baths</span>
+                                            <span><i class="bi bi-rulers"></i> 1,200 sqft</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center">
+                                        <span class="text-muted small">Listed 1 week ago</span>
+                                        <a href="property-details.html" class="btn btn-sm btn-outline-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                        <!-- Property 3 -->
+                        <!-- <div class="col-md-6 col-lg-4">
+                                <div class="card listing-card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Family Home">
+                                        <span class="badge bg-success position-absolute top-0 start-0 m-3">For Sale</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="text-primary fw-bold">$625,000</span>
+                                            <span class="text-muted"><i class="bi bi-geo-alt"></i> Chicago</span>
+                                        </div>
+                                        <h5 class="card-title">
+                                            <a href="property-details.html" class="text-decoration-none text-dark">Spacious Family Home with Backyard</a>
+                                        </h5>
+                                        <p class="card-text text-muted">Charming 4-bedroom home in a family-friendly neighborhood with a large backyard and finished basement.</p>
+                                        <div class="d-flex justify-content-between mt-3">
+                                            <span><i class="bi bi-house-door"></i> 4 Beds</span>
+                                            <span><i class="bi bi-droplet"></i> 3 Baths</span>
+                                            <span><i class="bi bi-rulers"></i> 2,400 sqft</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center">
+                                        <span class="text-muted small">Listed 5 days ago</span>
+                                        <a href="property-details.html" class="btn btn-sm btn-outline-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                        <!-- Property 4 -->
+                        <!-- <div class="col-md-6 col-lg-4">
+                                <div class="card listing-card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Luxury Condo">
+                                        <span class="badge bg-success position-absolute top-0 start-0 m-3">For Sale</span>
+                                        <span class="badge bg-warning position-absolute top-0 end-0 m-3">New</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="text-primary fw-bold">$875,000</span>
+                                            <span class="text-muted"><i class="bi bi-geo-alt"></i> Miami</span>
+                                        </div>
+                                        <h5 class="card-title">
+                                            <a href="property-details.html" class="text-decoration-none text-dark">Luxury Waterfront Condo</a>
+                                        </h5>
+                                        <p class="card-text text-muted">Stunning 3-bedroom condo with panoramic ocean views, resort-style amenities, and private balcony.</p>
+                                        <div class="d-flex justify-content-between mt-3">
+                                            <span><i class="bi bi-house-door"></i> 3 Beds</span>
+                                            <span><i class="bi bi-droplet"></i> 3.5 Baths</span>
+                                            <span><i class="bi bi-rulers"></i> 2,100 sqft</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center">
+                                        <span class="text-muted small">Listed 1 day ago</span>
+                                        <a href="property-details.html" class="btn btn-sm btn-outline-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                        <!-- Property 5 -->
+                        <!-- <div class="col-md-6 col-lg-4">
+                                <div class="card listing-card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Studio Apartment">
+                                        <span class="badge bg-info position-absolute top-0 start-0 m-3">For Rent</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="text-primary fw-bold">$1,500/month</span>
+                                            <span class="text-muted"><i class="bi bi-geo-alt"></i> Boston</span>
+                                        </div>
+                                        <h5 class="card-title">
+                                            <a href="property-details.html" class="text-decoration-none text-dark">Modern Studio in Downtown</a>
+                                        </h5>
+                                        <p class="card-text text-muted">Cozy studio apartment in the heart of downtown, walking distance to restaurants, shops, and public transit.</p>
+                                        <div class="d-flex justify-content-between mt-3">
+                                            <span><i class="bi bi-house-door"></i> Studio</span>
+                                            <span><i class="bi bi-droplet"></i> 1 Bath</span>
+                                            <span><i class="bi bi-rulers"></i> 550 sqft</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center">
+                                        <span class="text-muted small">Listed 3 days ago</span>
+                                        <a href="property-details.html" class="btn btn-sm btn-outline-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                        <!-- Property 6 -->
+                        <!-- <div class="col-md-6 col-lg-4">
+                                <div class="card listing-card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Country Home">
+                                        <span class="badge bg-success position-absolute top-0 start-0 m-3">For Sale</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="text-primary fw-bold">$750,000</span>
+                                            <span class="text-muted"><i class="bi bi-geo-alt"></i> Austin</span>
+                                        </div>
+                                        <h5 class="card-title">
+                                            <a href="property-details.html" class="text-decoration-none text-dark">Country Home on 2 Acres</a>
+                                        </h5>
+                                        <p class="card-text text-muted">Beautiful 5-bedroom country home on 2 acres with a pool, outdoor kitchen, and detached guest house.</p>
+                                        <div class="d-flex justify-content-between mt-3">
+                                            <span><i class="bi bi-house-door"></i> 5 Beds</span>
+                                            <span><i class="bi bi-droplet"></i> 4 Baths</span>
+                                            <span><i class="bi bi-rulers"></i> 3,200 sqft</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center">
+                                        <span class="text-muted small">Listed 1 week ago</span>
+                                        <a href="property-details.html" class="btn btn-sm btn-outline-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                        <!-- Property 7 -->
+                        <!-- <div class="col-md-6 col-lg-4">
+                                <div class="card listing-card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Commercial Space">
+                                        <span class="badge bg-info position-absolute top-0 start-0 m-3">For Rent</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="text-primary fw-bold">$3,500/month</span>
+                                            <span class="text-muted"><i class="bi bi-geo-alt"></i> Seattle</span>
+                                        </div>
+                                        <h5 class="card-title">
+                                            <a href="property-details.html" class="text-decoration-none text-dark">Modern Office Space</a>
+                                        </h5>
+                                        <p class="card-text text-muted">Contemporary office space in a prime location with open floor plan, conference room, and kitchen area.</p>
+                                        <div class="d-flex justify-content-between mt-3">
+                                            <span><i class="bi bi-building"></i> Commercial</span>
+                                            <span><i class="bi bi-droplet"></i> 2 Baths</span>
+                                            <span><i class="bi bi-rulers"></i> 1,800 sqft</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center">
+                                        <span class="text-muted small">Listed 4 days ago</span>
+                                        <a href="property-details.html" class="btn btn-sm btn-outline-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                        <!-- Property 8 -->
+                        <!-- <div class="col-md-6 col-lg-4">
+                                <div class="card listing-card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Vacation Home">
+                                        <span class="badge bg-success position-absolute top-0 start-0 m-3">For Sale</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="text-primary fw-bold">$525,000</span>
+                                            <span class="text-muted"><i class="bi bi-geo-alt"></i> Denver</span>
+                                        </div>
+                                        <h5 class="card-title">
+                                            <a href="property-details.html" class="text-decoration-none text-dark">Mountain View Cabin</a>
+                                        </h5>
+                                        <p class="card-text text-muted">Charming 3-bedroom cabin with stunning mountain views, wood-burning fireplace, and wraparound deck.</p>
+                                        <div class="d-flex justify-content-between mt-3">
+                                            <span><i class="bi bi-house-door"></i> 3 Beds</span>
+                                            <span><i class="bi bi-droplet"></i> 2 Baths</span>
+                                            <span><i class="bi bi-rulers"></i> 1,600 sqft</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center">
+                                        <span class="text-muted small">Listed 6 days ago</span>
+                                        <a href="property-details.html" class="btn btn-sm btn-outline-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                        <!-- Property 9 -->
+                        <!-- <div class="col-md-6 col-lg-4">
+                                <div class="card listing-card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Penthouse">
+                                        <span class="badge bg-success position-absolute top-0 start-0 m-3">For Sale</span>
+                                        <span class="badge bg-primary position-absolute top-0 end-0 m-3">Featured</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="text-primary fw-bold">$1,250,000</span>
+                                            <span class="text-muted"><i class="bi bi-geo-alt"></i> Los Angeles</span>
+                                        </div>
+                                        <h5 class="card-title">
+                                            <a href="property-details.html" class="text-decoration-none text-dark">Luxury Penthouse with Rooftop Terrace</a>
+                                        </h5>
+                                        <p class="card-text text-muted">Spectacular 4-bedroom penthouse with panoramic city views, private rooftop terrace, and luxury finishes.</p>
+                                        <div class="d-flex justify-content-between mt-3">
+                                            <span><i class="bi bi-house-door"></i> 4 Beds</span>
+                                            <span><i class="bi bi-droplet"></i> 4.5 Baths</span>
+                                            <span><i class="bi bi-rulers"></i> 3,500 sqft</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center">
+                                        <span class="text-muted small">Listed 3 days ago</span>
+                                        <a href="property-details.html" class="btn btn-sm btn-outline-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div> -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Page navigation" class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h3 class="mb-3">Get Property Alerts Delivered to Your Inbox</h3>
+                    <p class="text-muted mb-4">Stay updated with the latest properties matching your criteria and
+                        preferences.</p>
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control form-control-lg" placeholder="Your email address">
+                        </div>
+                        <div class="col-md-auto">
+                            <button type="submit" class="btn btn-primary btn-lg">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top row">
+                <div class="col-md-4">
+                    <h2>AdSpot</h2>
+                    <p>The #1 marketplace for all your needs. Find or sell homes, jobs, services, and more.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-twitter"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h2>Category</h2>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href=""> Real-estate</a></li>
+                        <li><a href=""> Jobs</a></li>
+                        <li><a href=""> Blogs</a></li>
+                        <li><a href=""> News</a></li>
+                        <li><a href=""> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h2>Newslatter</h2>
+                    <p>Subscribe to our newsletter for the latest listings and updates. </p>
+                    <div class="input-group mt-3">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Recipient's username"
+                                aria-label="Recipient's username" aria-describedby="button-addon2" />
+                            <button class="btn btn-primary" type="button" id="button-addon2">Button</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+                <div>© 2025 AdSpot. All rights reserved.</div>
+                <div>Designed with for our users</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
