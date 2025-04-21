@@ -312,7 +312,6 @@ header .second-header .logo {
 .third-header .right-header {
   gap: 100px;
   margin: 0;
-  padding: 10px 0;
 }
 .third-header .right-header .top-navbar ul {
   padding: 0;
@@ -322,6 +321,7 @@ header .second-header .logo {
   gap: 20px;
 }
 .third-header .right-header .top-navbar ul li {
+  padding: 10px;
   color: white;
   font-size: var(--font-lg);
   text-wrap: none;
@@ -352,6 +352,11 @@ header .second-header .logo {
   }
   .third-header .right-header .menu {
     display: block;
+  }
+}
+@media (max-width: 768px) {
+  .third-header {
+    padding: 10px 0;
   }
 }
 
@@ -706,4 +711,9 @@ footer .footer-top ul {
   .black-box {
     width: 100%;
   }
+}
+
+.banner-travel .travel_tabs {
+  background: none;
+  border: none;
 }/*# sourceMappingURL=style.css.map */
