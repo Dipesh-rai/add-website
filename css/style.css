@@ -112,6 +112,17 @@ p {
   font-size: var(--font-md);
 }
 
+.placeholder-glow .placeholder {
+  animation: shimmer 1.5s infinite linear;
+  background: linear-gradient(90deg, #dee2e6 25%, #e9ecef 50%, #dee2e6 75%);
+  background-size: 200% 100%;
+}
+
+@keyframes shimmer {
+  100% {
+    background-position: -200% 0;
+  }
+}
 .line-down {
   position: relative;
 }
