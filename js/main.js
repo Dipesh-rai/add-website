@@ -1,5 +1,5 @@
 // realstate products and pagination
-const propertiesPerPage = 9;
+const propertiesPerPage = 6;
     let currentPage = 1;
   
     const properties = [

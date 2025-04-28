@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -133,21 +134,21 @@
     </header>
 
 
-    <!-- Blog Header -->
-    <header class="bg-light py-5">
+      <!-- News Header -->
+      <header class="bg-primary text-white py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h1 class="fw-bold mb-3">AdSpot Blog</h1>
-                    <p class="lead mb-4">Insights, tips, and trends for real estate, jobs, and marketplace success.</p>
+                    <h1 class="fw-bold mb-3">Latest News</h1>
+                    <p class="lead mb-4">Stay updated with the latest market trends, industry developments, and company announcements.</p>
                 </div>
-                <div class="col-lg-6">
-                    <div class="card border-0 shadow-sm">
+                <div class="col-lg-6 p-3">
+                    <div class="card card-shadow">
                         <div class="card-body p-4">
-                            <h5 class="mb-3">Search Articles</h5>
+                            <h5 class="mb-3 text-dark">Search News</h5>
                             <form>
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search for articles...">
+                                    <input type="text" class="form-control" placeholder="Search for news...">
                                     <button class="btn btn-primary" type="submit">
                                         <i class="bi bi-search"></i>
                                     </button>
@@ -160,49 +161,60 @@
         </div>
     </header>
 
-    <!-- Blog Categories -->
-    <section class="py-4 border-bottom">
+    <!-- News Categories -->
+    <section class="py-4 border-bottom bg-light">
         <div class="container">
             <div class="d-flex flex-wrap justify-content-center">
-                <a href="#" class="btn btn-outline-primary rounded-pill m-1 active">All</a>
-                <a href="#" class="btn btn-outline-primary rounded-pill m-1">Real Estate</a>
-                <a href="#" class="btn btn-outline-primary rounded-pill m-1">Career Advice</a>
-                <a href="#" class="btn btn-outline-primary rounded-pill m-1">Market Trends</a>
-                <a href="#" class="btn btn-outline-primary rounded-pill m-1">Tips & Guides</a>
-                <a href="#" class="btn btn-outline-primary rounded-pill m-1">Success Stories</a>
-                <a href="#" class="btn btn-outline-primary rounded-pill m-1">Industry News</a>
+                <a href="#" class="btn btn-outline-primary rounded-pill m-1 active">All News</a>
+                <a href="#" class="btn btn-outline-primary rounded-pill m-1">Market Updates</a>
+                <a href="#" class="btn btn-outline-primary rounded-pill m-1">Industry Trends</a>
+                <a href="#" class="btn btn-outline-primary rounded-pill m-1">Company News</a>
+                <a href="#" class="btn btn-outline-primary rounded-pill m-1">Press Releases</a>
+                <a href="#" class="btn btn-outline-primary rounded-pill m-1">Events</a>
+                <a href="#" class="btn btn-outline-primary rounded-pill m-1">Announcements</a>
             </div>
         </div>
     </section>
 
-    <!-- Featured Article -->
-    <section class="py-5 bg-light">
+    <!-- Breaking News -->
+    <section class="py-4 bg-danger text-white">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <span class="badge bg-white text-danger me-3 px-3 py-2 fw-bold">BREAKING</span>
+                <div class="breaking-news-ticker">
+                    <h5 class="mb-0">AdSpot Launches New Mobile App with Enhanced Features for Buyers and Sellers</h5>
+                </div>
+                <a href="news-details.html" class="btn btn-sm btn-outline-light ms-auto">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured News -->
+    <section class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto p-3">
                     <div class="card card-shadow">
                         <div class="row g-0">
                             <div class="col-md-6">
-                                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8MTAlMjBUaXBzJTIwZm9yJTIwRmlyc3QlMjBUaW1lJTIwSG9tZSUyMEJ1eWVycyUyMGluJTIwVG9kYXkncyUyME1hcmtldHxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid rounded-start h-100 object-fit-cover" alt="Featured article image">
+                                <img src="https://images.unsplash.com/photo-1563711246253-b4af863acbd4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEFkU3BvdCUyMEV4cGFuZHMlMjB0byUyMDEwJTIwTmV3JTIwSW50ZXJuYXRpb25hbCUyME1hcmtldHN8ZW58MHx8MHx8fDA%3D" class="img-fluid rounded-start h-100 object-fit-cover" alt="Featured news image">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body p-4 d-flex flex-column h-100">
                                     <div>
                                         <span class="badge bg-primary mb-2">Featured</span>
-                                        <h2 class="card-title h3">10 Tips for First-Time Home Buyers in Today's Market</h2>
-                                        <p class="card-text text-muted">Navigate the challenges of buying your first home with expert advice on financing, negotiation, and finding the right property.</p>
+                                        <h2 class="card-title h3">AdSpot Expands to 10 New International Markets</h2>
+                                        <p class="card-text text-muted">The company's global expansion continues with the launch of localized platforms in key European and Asian markets, bringing the total to 25 countries worldwide.</p>
                                     </div>
                                     <div class="mt-auto">
                                         <div class="d-flex align-items-center mb-3">
-                                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D" class="rounded-circle me-2 author" alt="Author">
                                             <div>
-                                                <p class="mb-0 fw-medium">Sarah Johnson</p>
-                                                <p class="text-muted small mb-0">Real Estate Expert</p>
+                                                <p class="mb-0 text-muted small"><i class="bi bi-calendar3 me-2"></i> March 20, 2025</p>
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <span class="text-muted small"><i class="bi bi-calendar3"></i> March 15, 2025</span>
-                                            <a href="blog-details.html" class="btn btn-primary">Read More</a>
+                                            <span class="text-muted small"><i class="bi bi-eye me-1"></i> 1,245 views</span>
+                                            <a href="news-details.html" class="btn btn-primary">Read More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -214,176 +226,158 @@
         </div>
     </section>
 
-    <!-- Blog Articles -->
-    <section class="py-5">
+    <!-- News Articles -->
+    <section class="py-5 bg-light">
         <div class="container">
             <div class="row">
                 <!-- Main Content -->
                 <div class="col-lg-8">
-                    <h3 class="mb-4">Latest Articles</h3>
+                    <h3 class="mb-4">Latest News</h3>
                     
-                    <!-- Article 1 -->
+                    <!-- News 1 -->
                     <div class="card card-shadow mb-4">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="https://plus.unsplash.com/premium_photo-1661964000526-1bf2d91bd451?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fDUlMjBIb21lJTIwUmVub3ZhdGlvbiUyMFByb2plY3RzJTIwd2l0aCUyMHRoZSUyMEJlc3QlMjBST0l8ZW58MHx8MHx8fDA%3D" class="img-fluid rounded-start h-100 object-fit-cover" alt="Article image">
+                                <img src="https://images.unsplash.com/photo-1743486780771-afd09eea3624?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8SG91c2luZyUyME1hcmtldCUyMFNob3dzJTIwU3Ryb25nJTIwUmVjb3ZlcnklMjBpbiUyMFExJTIwMjAyNXxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid rounded-start h-100 object-fit-cover" alt="News image">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <div class="d-flex mb-2">
-                                        <span class="badge bg-success me-2">Real Estate</span>
+                                        <span class="badge bg-success me-2">Market Updates</span>
+                                        <span class="text-muted small"><i class="bi bi-calendar3"></i> March 18, 2025</span>
+                                    </div>
+                                    <h4 class="card-title">
+                                        <a href="news-details.html" class="text-decoration-none text-dark">Housing Market Shows Strong Recovery in Q1 2025</a>
+                                    </h4>
+                                    <p class="card-text">New data reveals a 15% increase in home sales compared to the previous quarter, with urban markets leading the recovery.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-muted small"><i class="bi bi-eye me-1"></i> 856 views</span>
+                                        <a href="news-details.html" class="btn btn-sm btn-outline-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- News 2 -->
+                    <div class="card card-shadow mb-4">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1722137148592-e0aa4a8061d8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fEFJJTIwUG93ZXJlZCUyMEpvYiUyME1hdGNoaW5nJTIwVHJhbnNmb3JtcyUyMFJlY3J1aXRtZW50JTIwSW5kdXN0cnl8ZW58MHx8MHx8fDA%3D" class="img-fluid rounded-start h-100 object-fit-cover" alt="News image">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="d-flex mb-2">
+                                        <span class="badge bg-info me-2">Industry Trends</span>
+                                        <span class="text-muted small"><i class="bi bi-calendar3"></i> March 15, 2025</span>
+                                    </div>
+                                    <h4 class="card-title">
+                                        <a href="news-details.html" class="text-decoration-none text-dark">AI-Powered Job Matching Transforms Recruitment Industry</a>
+                                    </h4>
+                                    <p class="card-text">New technologies are revolutionizing how employers find talent, with AI algorithms improving match quality by up to 40%.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-muted small"><i class="bi bi-eye me-1"></i> 723 views</span>
+                                        <a href="news-details.html" class="btn btn-sm btn-outline-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- News 3 -->
+                    <div class="card card-shadow mb-4">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1638262052640-82e94d64664a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEFkU3BvdCUyMEFubm91bmNlcyUyMFBhcnRuZXJzaGlwJTIwd2l0aCUyME1ham9yJTIwRmluYW5jaWFsJTIwSW5zdGl0dXRpb258ZW58MHx8MHx8fDA%3D" class="img-fluid rounded-start h-100 object-fit-cover" alt="News image">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="d-flex mb-2">
+                                        <span class="badge bg-warning text-dark me-2">Company News</span>
+                                        <span class="text-muted small"><i class="bi bi-calendar3"></i> March 12, 2025</span>
+                                    </div>
+                                    <h4 class="card-title">
+                                        <a href="news-details.html" class="text-decoration-none text-dark">AdSpot Announces Partnership with Major Financial Institution</a>
+                                    </h4>
+                                    <p class="card-text">Strategic alliance will provide users with integrated financing options and pre-approval for real estate and vehicle purchases.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-muted small"><i class="bi bi-eye me-1"></i> 912 views</span>
+                                        <a href="news-details.html" class="btn btn-sm btn-outline-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- News 4 -->
+                    <div class="card card-shadow mb-4">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://plus.unsplash.com/premium_photo-1683977922495-3ab3ce7ba4e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8QWRTcG90JTIwUmVhY2hlcyUyMDUwJTIwTWlsbGlvbiUyMEFjdGl2ZSUyME1vbnRobHklMjBVc2Vyc3xlbnwwfHwwfHx8MA%3D%3D" class="img-fluid rounded-start h-100 object-fit-cover" alt="News image">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="d-flex mb-2">
+                                        <span class="badge bg-danger me-2">Press Releases</span>
                                         <span class="text-muted small"><i class="bi bi-calendar3"></i> March 10, 2025</span>
                                     </div>
                                     <h4 class="card-title">
-                                        <a href="blog-details.html" class="text-decoration-none text-dark">5 Home Renovation Projects with the Best ROI</a>
+                                        <a href="news-details.html" class="text-decoration-none text-dark">AdSpot Reaches 50 Million Active Monthly Users</a>
                                     </h4>
-                                    <p class="card-text">Discover which home improvement projects offer the highest return on investment when it's time to sell your property.</p>
+                                    <p class="card-text">Milestone achievement represents 25% year-over-year growth and solidifies the platform's position as market leader.</p>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex align-items-center">
-                                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D" class="rounded-circle me-2 author" alt="Author">
-                                            <span class="small">Michael Brown</span>
-                                        </div>
-                                        <a href="blog-details.html" class="btn btn-sm btn-outline-primary">Read More</a>
+                                        <span class="text-muted small"><i class="bi bi-eye me-1"></i> 1,105 views</span>
+                                        <a href="news-details.html" class="btn btn-sm btn-outline-primary">Read More</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Article 2 -->
+                    <!-- News 5 -->
                     <div class="card card-shadow mb-4">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="https://images.unsplash.com/photo-1696861273647-92dfe8bb697c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEhvdyUyMHRvJTIwTmVnb3RpYXRlJTIwWW91ciUyMFNhbGFyeSUzQSUyMEV4cGVydCUyMFRpcHMlMjBmb3IlMjBKb2IlMjBTZWVrZXJzfGVufDB8fDB8fHww" class="img-fluid rounded-start h-100 object-fit-cover" alt="Article image">
+                                <img src="https://images.unsplash.com/photo-1606382584028-ca622c517491?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8QWRTcG90JTIwdG8lMjBIb3N0JTIwQW5udWFsJTIwTWFya2V0cGxhY2UlMjBDb25mZXJlbmNlJTIwaW4lMjBTZXB0ZW1iZXJ8ZW58MHx8MHx8fDA%3D" class="img-fluid rounded-start h-100 object-fit-cover" alt="News image">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <div class="d-flex mb-2">
-                                        <span class="badge bg-info me-2">Career Advice</span>
+                                        <span class="badge bg-primary me-2">Events</span>
                                         <span class="text-muted small"><i class="bi bi-calendar3"></i> March 8, 2025</span>
                                     </div>
                                     <h4 class="card-title">
-                                        <a href="blog-details.html" class="text-decoration-none text-dark">How to Negotiate Your Salary: Expert Tips for Job Seekers</a>
+                                        <a href="news-details.html" class="text-decoration-none text-dark">AdSpot to Host Annual Marketplace Conference in September</a>
                                     </h4>
-                                    <p class="card-text">Learn proven strategies to confidently negotiate your salary and secure the compensation package you deserve.</p>
+                                    <p class="card-text">The three-day event will bring together industry leaders, partners, and top sellers to discuss the future of online marketplaces.</p>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex align-items-center">
-                                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D" class="rounded-circle me-2 author" alt="Author">
-                                            <span class="small">Jennifer Lee</span>
-                                        </div>
-                                        <a href="blog-details.html" class="btn btn-sm btn-outline-primary">Read More</a>
+                                        <span class="text-muted small"><i class="bi bi-eye me-1"></i> 678 views</span>
+                                        <a href="news-details.html" class="btn btn-sm btn-outline-primary">Read More</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Article 3 -->
+                    <!-- News 6 -->
                     <div class="card card-shadow mb-4">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="https://media.istockphoto.com/id/1775377411/photo/smart-home-control-access-data-management.webp?a=1&b=1&s=612x612&w=0&k=20&c=RpQRp8DXeL_stEU8O-gu2HNjJyASEQ2bWr3CzLwIzn4=" class="img-fluid rounded-start h-100 object-fit-cover" alt="Article image">
+                                <img src="https://plus.unsplash.com/premium_photo-1677093905889-c60a2db5d5c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8QWRTcG90JTIwSW50cm9kdWNlcyUyMEVuaGFuY2VkJTIwU2VjdXJpdHklMjBGZWF0dXJlcyUyMGZvciUyMEFsbCUyMFVzZXJzfGVufDB8fDB8fHww" class="img-fluid rounded-start h-100 object-fit-cover" alt="News image">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <div class="d-flex mb-2">
-                                        <span class="badge bg-warning text-dark me-2">Market Trends</span>
+                                        <span class="badge bg-secondary me-2">Announcements</span>
                                         <span class="text-muted small"><i class="bi bi-calendar3"></i> March 5, 2025</span>
                                     </div>
                                     <h4 class="card-title">
-                                        <a href="blog-details.html" class="text-decoration-none text-dark">The Future of Remote Work: How It's Reshaping Real Estate</a>
+                                        <a href="news-details.html" class="text-decoration-none text-dark">AdSpot Introduces Enhanced Security Features for All Users</a>
                                     </h4>
-                                    <p class="card-text">Explore how the rise of remote work is changing housing preferences and creating new opportunities in the real estate market.</p>
+                                    <p class="card-text">New security measures include two-factor authentication, advanced fraud detection, and secure messaging to protect users.</p>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex align-items-center">
-                                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D" class="rounded-circle me-2 author" alt="Author">
-                                            <span class="small">David Wilson</span>
-                                        </div>
-                                        <a href="blog-details.html" class="btn btn-sm btn-outline-primary">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Article 4 -->
-                    <div class="card card-shadow mb-4">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://images.unsplash.com/photo-1510663254183-be641d20102f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fENyZWF0aW5nJTIwdGhlJTIwUGVyZmVjdCUyME9ubGluZSUyMExpc3RpbmclM0ElMjBQaG90b2dyYXBoeSUyMFRpcHMlMjBUaGF0JTIwU2VsbHxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid rounded-start h-100 object-fit-cover" alt="Article image">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                         <div class="d-flex mb-2">
-                                        <span class="badge bg-danger me-2">Tips & Guides</span>
-                                        <span class="text-muted small"><i class="bi bi-calendar3"></i> March 1, 2025</span>
-                                    </div>
-                                    <h4 class="card-title">
-                                        <a href="blog-details.html" class="text-decoration-none text-dark">Creating the Perfect Online Listing: Photography Tips That Sell</a>
-                                    </h4>
-                                    <p class="card-text">Master the art of product photography to create eye-catching listings that attract more buyers and sell faster.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex align-items-center">
-                                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D" class="rounded-circle me-2 author" alt="Author">
-                                            <span class="small">Emily Chen</span>
-                                        </div>
-                                        <a href="blog-details.html" class="btn btn-sm btn-outline-primary">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Article 5 -->
-                    <div class="card card-shadow mb-4">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://images.unsplash.com/photo-1689903777384-31fd780bef3c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fEZyb20lMjBTaWRlJTIwSHVzdGxlJTIwdG8lMjBGdWxsJTIwVGltZSUyMEJ1c2luZXNzJTNBJTIwT25lJTIwU2VsbGVyJ3MlMjBKb3VybmV5fGVufDB8fDB8fHww" class="img-fluid rounded-start h-100 object-fit-cover" alt="Article image">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <div class="d-flex mb-2">
-                                        <span class="badge bg-primary me-2">Success Stories</span>
-                                        <span class="text-muted small"><i class="bi bi-calendar3"></i> February 25, 2025</span>
-                                    </div>
-                                    <h4 class="card-title">
-                                        <a href="blog-details.html" class="text-decoration-none text-dark">From Side Hustle to Full-Time Business: One Seller's Journey</a>
-                                    </h4>
-                                    <p class="card-text">Read the inspiring story of how one AdSpot seller turned their weekend passion project into a thriving online business.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex align-items-center">
-                                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D" class="rounded-circle me-2 author" alt="Author">
-                                            <span class="small">Robert Taylor</span>
-                                        </div>
-                                        <a href="blog-details.html" class="btn btn-sm btn-outline-primary">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Article 6 -->
-                    <div class="card card-shadow mb-4">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://plus.unsplash.com/premium_photo-1661412944611-d3b798ab6638?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8TmV3JTIwUmVndWxhdGlvbnMlMjBBZmZlY3RpbmclMjBQcm9wZXJ0eSUyMEludmVzdG9ycyUzQSUyMFdoYXQlMjBZb3UlMjBOZWVkJTIwdG8lMjBLbm93fGVufDB8fDB8fHww" class="img-fluid rounded-start h-100 object-fit-cover" alt="Article image">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <div class="d-flex mb-2">
-                                        <span class="badge bg-secondary me-2">Industry News</span>
-                                        <span class="text-muted small"><i class="bi bi-calendar3"></i> February 20, 2025</span>
-                                    </div>
-                                    <h4 class="card-title">
-                                        <a href="blog-details.html" class="text-decoration-none text-dark">New Regulations Affecting Property Investors: What You Need to Know</a>
-                                    </h4>
-                                    <p class="card-text">Stay informed about recent regulatory changes that could impact your real estate investment strategy and portfolio.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex align-items-center">
-                                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D" class="rounded-circle me-2 author" alt="Author">
-                                            <span class="small">Amanda Rodriguez</span>
-                                        </div>
-                                        <a href="blog-details.html" class="btn btn-sm btn-outline-primary">Read More</a>
+                                        <span class="text-muted small"><i class="bi bi-eye me-1"></i> 542 views</span>
+                                        <a href="news-details.html" class="btn btn-sm btn-outline-primary">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -408,108 +402,116 @@
                 
                 <!-- Sidebar -->
                 <div class="col-lg-4">
-                    <!-- Popular Posts -->
-                    <div class="card mb-4">
+                    <!-- Most Read News -->
+                    <div class="card  mb-4">
                         <div class="card-body p-4">
-                            <h4 class="mb-3">Popular Posts</h4>
+                            <h4 class="mb-3">Most Read</h4>
                             
-                            <!-- Popular Post 1 -->
-                            <div class="d-flex mb-3 card-shadow pb-3 border-bottom">
-                                <img src="https://plus.unsplash.com/premium_photo-1661754912055-05f3dfa8c48e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fDclMjBTaWducyUyMEl0J3MlMjBUaW1lJTIwdG8lMjBTZWxsJTIwWW91ciUyMEhvbWV8ZW58MHx8MHx8fDA%3D" class="rounded me-3 side-add" alt="Popular post">
-                                <div>
-                                    <h6 class="mb-1"><a href="blog-details.html" class="text-decoration-none text-dark">7 Signs It's Time to Sell Your Home</a></h6>
-                                    <p class="text-muted small mb-0"><i class="bi bi-calendar3"></i> February 15, 2025</p>
-                                </div>
-                            </div>
-                            
-                            <!-- Popular Post 2 -->
+                            <!-- Most Read 1 -->
                             <div class="d-flex card-shadow mb-3 pb-3 border-bottom">
-                                <img src="https://images.unsplash.com/photo-1635253548172-d82ffe76449d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UmVzdW1lJTIwTWlzdGFrZXMlMjBUaGF0JTIwQ291bGQlMjBDb3N0JTIwWW91JTIwdGhlJTIwSm9ifGVufDB8fDB8fHww" class="side-add rounded me-3" alt="Popular post">
+                                <img src="https://plus.unsplash.com/premium_photo-1680396766429-ccfb5626a40d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8QWRTcG90JTIwU2VjdXJlcyUyMCUyNDEwME0lMjBpbiUyMFNlcmllcyUyMEQlMjBGdW5kaW5nfGVufDB8fDB8fHww" class="rounded me-3 side-add" alt="Popular news">
                                 <div>
-                                    <h6 class="mb-1"><a href="blog-details.html" class="text-decoration-none text-dark">Resume Mistakes That Could Cost You the Job</a></h6>
-                                    <p class="text-muted small mb-0"><i class="bi bi-calendar3"></i> February 10, 2025</p>
+                                    <h6 class="mb-1"><a href="news-details.html" class="text-decoration-none text-dark">AdSpot Secures $100M in Series D Funding</a></h6>
+                                    <p class="text-muted small mb-0"><i class="bi bi-calendar3"></i> March 1, 2025</p>
                                 </div>
                             </div>
                             
-                            <!-- Popular Post 3 -->
+                            <!-- Most Read 2 -->
                             <div class="d-flex card-shadow mb-3 pb-3 border-bottom">
-                                <img src="https://images.unsplash.com/photo-1536408803730-06d570c65a79?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fFRoZSUyMFBzeWNob2xvZ3klMjBvZiUyMFByaWNpbmclM0ElMjBIb3clMjB0byUyMFNldCUyMHRoZSUyMFJpZ2h0JTIwUHJpY2V8ZW58MHx8MHx8fDA%3D" class="rounded me-3 side-add" alt="Popular post">
+                                <img src="https://images.unsplash.com/photo-1650978813365-eec370598fd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fE5ldyUyMFN0dWR5JTIwU2hvd3MlMjA3MCUyNSUyMG9mJTIwSm9icyUyME5vdyUyMFBvc3RlZCUyME9ubGluZSUyMEZpcnN0fGVufDB8fDB8fHww" class="rounded me-3 side-add" alt="Popular news">
                                 <div>
-                                    <h6 class="mb-1"><a href="blog-details.html" class="text-decoration-none text-dark">The Psychology of Pricing: How to Set the Right Price</a></h6>
-                                    <p class="text-muted small mb-0"><i class="bi bi-calendar3"></i> February 5, 2025</p>
+                                    <h6 class="mb-1"><a href="news-details.html" class="text-decoration-none text-dark">New Study Shows 70% of Jobs Now Posted Online First</a></h6>
+                                    <p class="text-muted small mb-0"><i class="bi bi-calendar3"></i> February 25, 2025</p>
                                 </div>
                             </div>
                             
-                            <!-- Popular Post 4 -->
+                            <!-- Most Read 3 -->
+                            <div class="d-flex card-shadow mb-3 pb-3 border-bottom">
+                                <img src="https://media.istockphoto.com/id/2154945866/photo/5g-innovation-connectivity-future-concept-hands-of-businessman-holding-light-bulb-and-5g-icon.webp?a=1&b=1&s=612x612&w=0&k=20&c=z5Wz0a9UkmeTRUen3eVt8ojlhNjLhjnynmmuwN30ZrQ=" class="rounded me-3 side-add" alt="Popular news">
+                                <div>
+                                    <h6 class="mb-1"><a href="news-details.html" class="text-decoration-none text-dark">AdSpot CEO Named Among Top 50 Tech Leaders</a></h6>
+                                    <p class="text-muted small mb-0"><i class="bi bi-calendar3"></i> February 20, 2025</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Most Read 4 -->
                             <div class="d-flex card-shadow">
-                                <img src="https://images.unsplash.com/photo-1506645292803-579c17d4ba6a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fFZpcnR1YWwlMjBTdGFnaW5nJTNBJTIwSXMlMjBJdCUyMFdvcnRoJTIwdGhlJTIwSW52ZXN0bWVudCUzRnxlbnwwfHwwfHx8MA%3D%3D" class="rounded me-3 side-add" alt="Popular post">
+                                <img src="https://images.unsplash.com/photo-1610814588968-4b9a6da69e3f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fFJlYWwlMjBFc3RhdGUlMjBJbnZlbnRvcnklMjBFeHBlY3RlZCUyMHRvJTIwSW5jcmVhc2UlMjBieSUyMFN1bW1lcnxlbnwwfHwwfHx8MA%3D%3D" class="rounded me-3 side-add alt="Popular news">
                                 <div>
-                                    <h6 class="mb-1"><a href="blog-details.html" class="text-decoration-none text-dark">Virtual Staging: Is It Worth the Investment?</a></h6>
-                                    <p class="text-muted small mb-0"><i class="bi bi-calendar3"></i> January 30, 2025</p>
+                                    <h6 class="mb-1"><a href="news-details.html" class="text-decoration-none text-dark">Real Estate Inventory Expected to Increase by Summer</a></h6>
+                                    <p class="text-muted small mb-0"><i class="bi bi-calendar3"></i> February 15, 2025</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Categories -->
+                    <!-- News Categories -->
                     <div class="card card-shadow mb-4">
                         <div class="card-body p-4">
                             <h4 class="mb-3">Categories</h4>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                    <a href="#" class="text-decoration-none text-dark">Real Estate</a>
-                                    <span class="badge bg-primary rounded-pill">24</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                    <a href="#" class="text-decoration-none text-dark">Career Advice</a>
+                                    <a href="#" class="text-decoration-none text-dark">Market Updates</a>
                                     <span class="badge bg-primary rounded-pill">18</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                    <a href="#" class="text-decoration-none text-dark">Market Trends</a>
+                                    <a href="#" class="text-decoration-none text-dark">Industry Trends</a>
+                                    <span class="badge bg-primary rounded-pill">24</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                    <a href="#" class="text-decoration-none text-dark">Company News</a>
                                     <span class="badge bg-primary rounded-pill">15</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                    <a href="#" class="text-decoration-none text-dark">Tips & Guides</a>
-                                    <span class="badge bg-primary rounded-pill">22</span>
+                                    <a href="#" class="text-decoration-none text-dark">Press Releases</a>
+                                    <span class="badge bg-primary rounded-pill">12</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                    <a href="#" class="text-decoration-none text-dark">Success Stories</a>
+                                    <a href="#" class="text-decoration-none text-dark">Events</a>
+                                    <span class="badge bg-primary rounded-pill">8</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                    <a href="#" class="text-decoration-none text-dark">Announcements</a>
                                     <span class="badge bg-primary rounded-pill">10</span>
                                 </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- News Archive -->
+                    <div class="card card-shadow mb-4">
+                        <div class="card-body p-4">
+                            <h4 class="mb-3">Archives</h4>
+                            <ul class="list-group list-group-flush">
                                 <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                    <a href="#" class="text-decoration-none text-dark">Industry News</a>
+                                    <a href="#" class="text-decoration-none text-dark">March 2025</a>
+                                    <span class="badge bg-primary rounded-pill">12</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                    <a href="#" class="text-decoration-none text-dark">February 2025</a>
+                                    <span class="badge bg-primary rounded-pill">15</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                    <a href="#" class="text-decoration-none text-dark">January 2025</a>
+                                    <span class="badge bg-primary rounded-pill">18</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                    <a href="#" class="text-decoration-none text-dark">December 2024</a>
+                                    <span class="badge bg-primary rounded-pill">20</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                    <a href="#" class="text-decoration-none text-dark">November 2024</a>
                                     <span class="badge bg-primary rounded-pill">14</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     
-                    <!-- Tags -->
-                    <div class="card card-shadow mb-4">
-                        <div class="card-body p-4">
-                            <h4 class="mb-3">Tags</h4>
-                            <div class="d-flex flex-wrap">
-                                <a href="#" class="badge bg-light text-dark text-decoration-none m-1 p-2">Real Estate</a>
-                                <a href="#" class="badge bg-light text-dark text-decoration-none m-1 p-2">Home Buying</a>
-                                <a href="#" class="badge bg-light text-dark text-decoration-none m-1 p-2">Selling Tips</a>
-                                <a href="#" class="badge bg-light text-dark text-decoration-none m-1 p-2">Job Search</a>
-                                <a href="#" class="badge bg-light text-dark text-decoration-none m-1 p-2">Interview</a>
-                                <a href="#" class="badge bg-light text-dark text-decoration-none m-1 p-2">Resume</a>
-                                <a href="#" class="badge bg-light text-dark text-decoration-none m-1 p-2">Marketing</a>
-                                <a href="#" class="badge bg-light text-dark text-decoration-none m-1 p-2">Photography</a>
-                                <a href="#" class="badge bg-light text-dark text-decoration-none m-1 p-2">Remote Work</a>
-                                <a href="#" class="badge bg-light text-dark text-decoration-none m-1 p-2">Investment</a>
-                                <a href="#" class="badge bg-light text-dark text-decoration-none m-1 p-2">Renovation</a>
-                                <a href="#" class="badge bg-light text-dark text-decoration-none m-1 p-2">Pricing</a>
-                            </div>
-                        </div>
-                    </div>
-                    
                     <!-- Newsletter -->
                     <div class="card card-shadow">
-                        <div class="card-body p-4 bg-light rounded">
+                        <div class="card-body p-4 bg-primary bg-opacity-10 rounded">
                             <h4 class="mb-3">Subscribe to Our Newsletter</h4>
-                            <p class="text-muted mb-4">Get the latest articles, tips, and market insights delivered straight to your inbox.</p>
+                            <p class="text-muted mb-4">Get the latest news and updates delivered straight to your inbox.</p>
                             <form>
                                 <div class="mb-3">
                                     <input type="email" class="form-control" placeholder="Your email address" required>
@@ -524,6 +526,7 @@
             </div>
         </div>
     </section>
+
 
     <footer>
         <div class="container">

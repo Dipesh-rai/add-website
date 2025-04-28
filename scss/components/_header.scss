@@ -69,14 +69,37 @@ header {
                 align-items: center;
                 margin-bottom: 0;
                 gap: 20px;
-
+                
                 li {
                     padding:10px;
                     color: white;
                     font-size: var(--font-lg);
                     text-wrap: none;
+                    position:relative;
+                   
+                    .submenu {
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        background: var(--background-color);
+                        display: none;
+                        padding: 10px 0;
+                        z-index:100;
+                        ul{
+                            padding:0;
+                            display:block;
+                            flex-direction:column;
+                            li{
+                                white-space: nowrap;
+                            }
+                        }
+                        
+                    }
                     &:hover {
                         background-color: var(--primary-color);
+                        .submenu{
+                            display:block;
+                        }
                     }
 
                     a {

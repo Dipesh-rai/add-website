@@ -22,36 +22,92 @@
 </head>
 
 <body>
-    <!-- header -section -->
-    <header>
-        <!-- topheader -->
-        <div class="topheader p-2">
-            <div class="container">
-                <div class="topheader-section d-flex justify-content-between align-items-center">
-                    <div class="tel">Telephone Enquiry:(+123) 123 456</div>
-                    <div class="top-right">
-                        <select name="" class='select-headerpart' id="">
-                            <option value="" disabled>Setting</option>
-                            <option value="">Setting 1</option>
-                            <option value="">Setting 2</option>
-                            <option value="">Setting 3</option>
-                        </select>
-                        <label>Currency:</label>
-                        <select name="" class='select-headerpart' id="">
-                            <option value="">USD</option>
-                            <option value="">RS</option>
-                        </select>
+   <!-- header -section -->
+   <header>
+    <!-- topheader -->
+    <div class="topheader p-2">
+        <div class="container">
+            <div class="topheader-section d-flex justify-content-between align-items-center">
+                <div class="tel">Telephone Enquiry:(+123) 123 456</div>
+                <div class="top-right">
+                    <select name="" class='select-headerpart' id="">
+                        <option value="" disabled>Setting</option>
+                        <option value="">Setting 1</option>
+                        <option value="">Setting 2</option>
+                        <option value="">Setting 3</option>
+                    </select>
+                    <label>Currency:</label>
+                    <select name="" class='select-headerpart' id="">
+                        <option value="">USD</option>
+                        <option value="">RS</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mid header -->
+    <div class="second-header p-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <a href="index.html">Booking System</a>
+                </div>
+                <div class="search d-flex">
+                    <select class="form-select form-select-lg" aria-label="Large select example">
+                        <option selected>All</option>
+                        <option value="1">Real State</option>
+                        <option value="2">Vehicles</option>
+                        <option value="3">Job</option>
+                    </select>
+                    <div class="search-input d-flex">
+                        <input type="text" class="form-control" aria-label="Text input with checkbox"
+                            placeholder='Search availability' />
+                        <button type="button" class="btn btn-primary"><i class="bi bi-search"></i></button>
+                    </div>
+
+
+                </div>
+                <div class="right-content">
+                    <div class="dropdown d-flex gap-2">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-cart-check-fill"></i>
+                        </button>
+                        <a href="" class="btn btn-outline-primary">Login</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- mid header -->
-        <div class="second-header p-3">
-            <div class="container">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="logo">
-                        <a href="index.html">Booking System</a>
-                    </div>
+    </div>
+    <!-- nav part -->
+    <div class="third-header">
+        <div class="container">
+            <div class="right-header d-flex justify-content-between align-items-center">
+                <div class="top-navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="category">Category <i class="bi bi-caret-down-fill"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="realstate.html">Real-State</a></li>
+                                    <li><a href="travelandtours.html">Travel & Tours</a></li>
+                                    <li><a href="job.html">Jobs</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="search d-flex">
+                    <select class="form-select form-select-lg" aria-label="Large select example">
+                        <option selected>All</option>
+                        <option value="1">Real State</option>
+                        <option value="2">Vehicles</option>
+                        <option value="3">Job</option>
+                    </select>
                     <div class="search d-flex">
                         <select class="form-select form-select-lg" aria-label="Large select example">
                             <option selected>All</option>
@@ -59,70 +115,21 @@
                             <option value="2">Vehicles</option>
                             <option value="3">Job</option>
                         </select>
-                        <div class="search-input d-flex">
+                        <div class="search-navbar d-flex">
                             <input type="text" class="form-control" aria-label="Text input with checkbox"
                                 placeholder='Search availability' />
                             <button type="button" class="btn btn-primary"><i class="bi bi-search"></i></button>
                         </div>
-
-
-                    </div>
-                    <div class="right-content">
-                        <div class="dropdown d-flex gap-2">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <i class="bi bi-cart-check-fill"></i>
-                            </button>
-                            <a href="" class="btn btn-outline-primary">Login</a>
-                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- nav part -->
-        <div class="third-header">
-            <div class="container">
-                <div class="right-header d-flex justify-content-between align-items-center">
-                    <div class="top-navbar">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="realstate.html">Real-estate</a></li>
-                            <li><a href="travelandtours.html">Travel & Tours</a></li>
-                            <li><a href="job.html">Jobs</a></li>
-                            <li><a href="blog.html">Blogs</a></li>
-                            <li><a href="news.html">News</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="search d-flex">
-                        <select class="form-select form-select-lg" aria-label="Large select example">
-                            <option selected>All</option>
-                            <option value="1">Real State</option>
-                            <option value="2">Vehicles</option>
-                            <option value="3">Job</option>
-                        </select>
-                        <div class="search d-flex">
-                            <select class="form-select form-select-lg" aria-label="Large select example">
-                                <option selected>All</option>
-                                <option value="1">Real State</option>
-                                <option value="2">Vehicles</option>
-                                <option value="3">Job</option>
-                            </select>
-                            <div class="search-navbar d-flex">
-                                <input type="text" class="form-control" aria-label="Text input with checkbox"
-                                    placeholder='Search availability' />
-                                <button type="button" class="btn btn-primary"><i class="bi bi-search"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="menu">
-                        <i class="bi bi-list"></i>
-                    </div>
-
+                <div class="menu">
+                    <i class="bi bi-list"></i>
                 </div>
+
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
 
     <!-- Filter Section -->
@@ -166,7 +173,7 @@
             <div class="row">
                 <!-- Filters Sidebar -->
                 <div class="col-lg-3 mb-4 mb-lg-0">
-                    <div class="card border-0 shadow-sm mb-4">
+                    <div class="card card-shadow mb-4">
                         <div class="card-body">
                             <h5 class="mb-3">Advanced Filters</h5>
 
@@ -220,7 +227,7 @@
                         </div>
                     </div>
 
-                    <div class="card border-0 shadow-sm mb-4">
+                    <div class="card card-shadow mb-4">
                         <div class="card-body">
                             <h5 class="mb-3">Amenities</h5>
 
@@ -282,7 +289,7 @@
                         </div>
                     </div>
 
-                    <div class="card border-0 shadow-sm">
+                    <div class="card card-shadow">
                         <div class="card-body">
                             <h5 class="mb-3">Property Status</h5>
 
@@ -324,7 +331,7 @@
                 <!-- Property Listings -->
                 <div class="col-lg-9">
                     <!-- Featured Property Ad -->
-                    <div class="card border-0 bg-primary bg-opacity-10 mb-4">
+                    <div class="card card-shadow bg-primary bg-opacity-10 mb-4">
                         <div class="card-body p-4">
                             <div class="row align-items-center">
                                 <div class="col-md-4 mb-3 mb-md-0">
