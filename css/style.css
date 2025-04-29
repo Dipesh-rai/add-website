@@ -539,7 +539,7 @@ footer .footer-top ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   color: white;
   text-align: center;
   font-weight: 500;
@@ -548,12 +548,26 @@ footer .footer-top ul {
   justify-content: center;
   color: white;
 }
-.banner .banner-article .side-banner .side-article:nth-child(2) {
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-}
 .banner .banner-article .side-banner .side-article button {
+  margin-inline: auto;
+  font-size: var(--font-sm);
+}
+.banner .banner-article .side-banner .side-article-destination {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 50%;
+  transform: translateY(-50%);
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-size: var(--font-md);
+}
+.banner .banner-article .side-banner .side-article-destination button {
   margin-inline: auto;
   font-size: var(--font-sm);
 }
