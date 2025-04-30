@@ -14,188 +14,139 @@
         crossorigin="anonymous"></script>
     <!-- bootstrap-icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  
+
     <!-- owl carousel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 </head>
 
 <body>
-    <!-- header -section -->
     <header>
-        <!-- topheader -->
-        <div class="topheader p-2">
-            <div class="container">
-                <div class="topheader-section d-flex justify-content-between align-items-center">
-                    <div class="tel">Telephone Enquiry:(+123) 123 456</div>
-                    <div class="top-right">
-                        <select name="" class='select-headerpart' id="">
-                            <option value="" disabled>Setting</option>
-                            <option value="">Setting 1</option>
-                            <option value="">Setting 2</option>
-                            <option value="">Setting 3</option>
-                        </select>
-                        <label>Currency:</label>
-                        <select name="" class='select-headerpart' id="">
-                            <option value="">USD</option>
-                            <option value="">RS</option>
-                        </select>
-                    </div>
+        <div class="containerr">
+            <div class="header-top">
+                <div class="header-heading">Global State</div>
+                <nav>
+                    <ul class="d-flex align-items-center gap-3">
+                        <li class="active"><a href=""><i class="bi bi-house-door"></i> Home </a></li>
+                        <li><a href=""><i class="bi bi-geo-alt-fill"></i> Real State <i
+                                    class="bi bi-chevron-down"></i></a></li>
+                        <li><a href=""><i class="bi bi-map"></i> Travel and tours <i class="bi bi-chevron-down"></i></a>
+                        </li>
+                        <li><a href=""><i class="bi bi-person-fill"></i> Jobs <i class="bi bi-chevron-down"></i><a></li>
+                        <li><a href=""><i class="bi bi-chat-right-text"></i> consultency <i
+                                    class="bi bi-chevron-down"></i></a></li>
+                        <li><a href=""><i class="bi bi-shop-window"></i> Furniture <i
+                                    class="bi bi-chevron-down"></i></a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="login">
+                    <a href="" class="btn btn-outline-primary">Login</a>
+                    <a hred="" class="text-white btn btn-primary">Sign up</a>
                 </div>
-            </div>
-        </div>
-        <!-- mid header -->
-        <div class="second-header p-3">
-            <div class="container">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="logo">
-                        <a href="index.html">Booking System</a>
-                    </div>
-                    <div class="search d-flex">
-                        <select class="form-select form-select-lg" aria-label="Large select example">
-                            <option selected>All</option>
-                            <option value="1">Real State</option>
-                            <option value="2">Vehicles</option>
-                            <option value="3">Job</option>
-                        </select>
-                        <div class="search-input d-flex">
-                            <input type="text" class="form-control" aria-label="Text input with checkbox"
-                                placeholder='Search availability' />
-                            <button type="button" class="btn btn-primary"><i class="bi bi-search"></i></button>
-                        </div>
 
-
-                    </div>
-                    <div class="right-content">
-                        <div class="dropdown d-flex gap-2">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <i class="bi bi-cart-check-fill"></i>
-                            </button>
-                            <a href="" class="btn btn-outline-primary">Login</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- nav part -->
-        <div class="third-header">
-            <div class="container">
-                <div class="right-header d-flex justify-content-between align-items-center">
-                    <div class="top-navbar">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="category">Category <i class="bi bi-caret-down-fill"></i></a>
-                                <div class="submenu">
-                                    <ul>
-                                        <li><a href="realstate.html">Real-State</a></li>
-                                        <li><a href="travelandtours.html">Travel & Tours</a></li>
-                                        <li><a href="job.html">Jobs</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li><a href="blog.html">Blogs</a></li>
-                            <li><a href="news.html">News</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="search d-flex">
-                        <select class="form-select form-select-lg" aria-label="Large select example">
-                            <option selected>All</option>
-                            <option value="1">Real State</option>
-                            <option value="2">Vehicles</option>
-                            <option value="3">Job</option>
-                        </select>
-                        <div class="search d-flex">
-                            <select class="form-select form-select-lg" aria-label="Large select example">
-                                <option selected>All</option>
-                                <option value="1">Real State</option>
-                                <option value="2">Vehicles</option>
-                                <option value="3">Job</option>
-                            </select>
-                            <div class="search-navbar d-flex">
-                                <input type="text" class="form-control" aria-label="Text input with checkbox"
-                                    placeholder='Search availability' />
-                                <button type="button" class="btn btn-primary"><i class="bi bi-search"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="menu">
-                        <i class="bi bi-list"></i>
-                    </div>
-
-                </div>
             </div>
         </div>
     </header>
 
+    <!-- search section -->
+    <section class="searc-h">
+        <h2>Find Your Perfect Property</h2>
+        <p>Search through thousands of listings</p>
+
+        <article class="search-items">
+            <form action="">
+                <div class="d-flex align-items-center gap-2">
+                <input type="text" placeholder="Location">
+                <input type="text" placeholder="Property-type">
+                <input type="text" placeholder="Price Range">
+                <button type="button" class="btn btn-warning">Search</button>
+            </div>
+            </form>
+            <div class="real-state-items">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Apartments</a></li>
+                    <li><a href="">Villas</a></li>
+                    <li><a href="">Commercial</a></li>
+                </ul>
+            </div>
+        </article>
+    </section>
+
+
     <!-- Banner section -->
-    <section class='banner-section mt-2'>
+    <section class='banner-section mt-5'>
         <div class="banner">
-            <div class="container">
+            <div class="containerr">
                 <div class="banner-article">
                     <div class="first-banner">
                         <div class="responsive owl-carousel">
 
                             <div class="banner-part">
-                                <div class="card card-banner">
-                                    <img src="https://plus.unsplash.com/premium_photo-1669244777314-682992ab3619?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YmFubmVyJTIwd2Vic2l0ZSUyMGZvciUyMHJlYWwlMjBzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D"
+                                <div class="">
+                                    <img src="img/luxaryhouse.jpg"
                                         alt="" />
                                     <div class="banner-items">
-                                        <h2>Your One-Stop Hub for Homes, Jobs, Services & More</h2>
-                                        <p>List. Discover. Connect — all in one powerful platform.</p>
-                                        <button type="button" class="btn btn-primary">Get Started Free</button>
+                                        <span class="badge bg-primary">Full-time</span>
+                                        <div class="responsive-heading">Luxury Living at its Finest</div>
+                                        <p>Discover exlusive properties in prime location around the world</p>
+                                        <button type="button" class="btn btn-light">Explore properties</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="banner-part ">
-                                <div class="card card-banner">
-                                    <img src="https://media.istockphoto.com/id/2152254782/photo/new-modern-apartment-building-with-balconies-and-blue-sky.webp?a=1&b=1&s=612x612&w=0&k=20&c=QfJtr7CmwtHINREWRG9tNC73UBOGW38t1UW7fDSvgGc="
+                                <div class="">
+                                    <img src="img/tours.jpg"
                                         alt="" />
                                     <div class="banner-items">
-                                        <h2>Find Your Perfect Home</h2>
-                                        <p>Modern apartments, trusted listings, easy bookings.</p>
-                                        <button type="button" class="btn btn-primary">Book Now</button>   
+                                        <span class="badge bg-primary">Travel</span>
+                                        <div class="responsive-heading">Exotic gateway</div>
+                                        <p>Experience Unforgettable Journeys to breathtaking destinations</p>
+                                        <button type="button" class="btn btn-light">Book Your Trip</button>  
                                     </div>
 
                                 </div>
 
                             </div>
                             <div class="banner-part">
-                                <div class="card card-banner">
-                                    <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D"
+                                <div class="">
+                                    <img src="img/jobs.jpg"
                                         alt="" />
-                                    <div class="banner-items">
-                                        <div class="heading">MEHMED APARTMANTs</div>
-                                        <button type="button" class="btn btn-primary">Book Now</button>
-                                    </div>
+                                        <div class="banner-items">
+                                            <span class="badge bg-primary captalize">Careers</span>
+                                            <div class="responsive-heading">Find Your Dream jobs</div>
+                                            <p>Connect with the Top employee and discover the exciting opportunities</p>
+                                            <button type="button" class="btn btn-light">Browse jobs</button>  
+                                        </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
                     <div class="side-banner">
-                        <div class="card card-shadow">
-                            <img src="https://images.unsplash.com/photo-1587407645636-de81a3f1441d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjA3fHx2aWV3JTIwam9ic3xlbnwwfHwwfHx8MA%3D%3D"
-                                alt="" />
+                        <div class="">
+                            <img src="img/accomodationluxary.jpg" alt="" />
                             <div class="side-article">
-                                <div class="heading-side">Explore Jobs & Training</div>
-                                <p>Unlock new career paths with top opportunities.</p>
-                                <button type="button" class="btn btn-primary">View Jobs</button>
+                                <span class="badge text-bg-danger">Hotel Booking</span>
+                                <div class="banner-heading-side">Luxary Accomodation</div>
+                                <p>Find the perfect stays for your next bisiness trip or vacation</p>
+                                <a href="">Learn More <i class="bi bi-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="side-banner">
-                        <div class="card card-shadow">
+                        <div class="">
                             <div class="side-banner">
-                                <img src="https://t4.ftcdn.net/jpg/11/03/90/05/240_F_1103900545_36bOb2kmW2z7nOfnJm4PoVjQkCezeSkt.jpg"
+                                <img src="img/homefurnishing.jpg"
                                     alt="" />
-                                <div class="side-article-destination">
-                                    <div class="heading-side">Discover Destinations</div>
-                                    <p>Plan your next adventure with ease and inspiration.</p>
-                                    <button type="button" class="btn btn-primary">View Tours</button>
-                                 </div>
+                                    <div class="side-article">
+                                        <span class="badge text-bg-danger">Furniture</span>
+                                        <div class="banner-heading-side">Premium Home Furnishing</div>
+                                        <p>Transform your space with our curated collection of our furniture</p>
+                                        <a href="">Learn More <i class="bi bi-chevron-right"></i></a>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -205,157 +156,104 @@
         </div>
     </section>
 
-    <!-- Categories Section -->
-    <section id="categories" class=" py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Browse by Category</h2>
-            <div class="row py-4 g-4">
-                <!-- Real Estate Category -->
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card category-card h-100 card-shadow">
-                        <div class="card-body text-center">
-                            <div class="category-icon mb-3">
-                                <i class="bi bi-house-door fs-1 text-primary"></i>
-                            </div>
-                            <h5 class="card-title">Real Estate</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="text-decoration-none text-muted">Homes</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Apartments</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Rooms</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Commercial</a></li>
-                            </ul>
+    <!-- Services Section -->
+    <section class="services" class="mt-5">
+        
+            <h2 class="text-center">Our Services</h2>
+            <p class="text-center">Discover Everything You need in one place</p>
+        
+        <div class="containerr">
+            <div class="services-items row">
+                <!-- realstate -->
+                <div class="col-lg-3 py-3">
+                    <div class="card card-shadow">
+                        <img src="img/real-state.jpg" alt="">
+                        <div class="card-body">
+                            <div class="service-heading text-center">Real-State</div>
+                            <p class="text-center">Find Your dream home or investment property with our extensive listings and experts agents</p>
+                            <a href="#">Explore <i class="bi bi-arrow-right-short"></i></a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Jobs Category -->
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card category-card h-100 card-shadow">
-                        <div class="card-body text-center">
-                            <div class="category-icon mb-3">
-                                <i class="bi bi-briefcase fs-1 text-primary"></i>
-                            </div>
-                            <h5 class="card-title">Jobs</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="text-decoration-none text-muted">Full-time</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Part-time</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Remote</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Freelance</a></li>
-                            </ul>
+                <!-- Travel and tours -->
+                <div class="col-lg-3 py-3">
+                    <div class="card card-shadow">
+                        <img src="img/travel&Tours.jpg" alt="">
+                        <div class="card-body">
+                            <div class="service-heading text-center">Travel & Tours</div>
+                            <p class="text-center">Find Your dream home or investment property with our extensive listings and experts agents</p>
+                            <a href="#">Explore <i class="bi bi-arrow-right-short"></i></a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Services Category -->
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card category-card h-100 card-shadow">
-                        <div class="card-body text-center">
-                            <div class="category-icon mb-3">
-                                <i class="bi bi-tools fs-1 text-primary"></i>
-                            </div>
-                            <h5 class="card-title">Services</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="text-decoration-none text-muted">Home Services</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Professional</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Health & Beauty</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Events</a></li>
-                            </ul>
+                <!-- Job Listings -->
+                <div class="col-lg-3 py-3">
+                    <div class="card card-shadow">
+                        <img src="img/job.jpg" alt="">
+                        <div class="card-body">
+                            <div class="service-heading text-center">Real-State</div>
+                            <p class="text-center">Find Your dream home or investment property with our extensive listings and experts agents</p>
+                            <a href="#">Explore <i class="bi bi-arrow-right-short"></i></a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Hotels Category -->
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card category-card h-100 card-shadow">
-                        <div class="card-body text-center">
-                            <div class="category-icon mb-3">
-                                <i class="bi bi-building fs-1 text-primary"></i>
-                            </div>
-                            <h5 class="card-title">Hotels</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="text-decoration-none text-muted">Luxury</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Budget</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Resorts</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Vacation Rentals</a></li>
-                            </ul>
+                <!-- Hotel Booking -->
+                <div class="col-lg-3 py-3">
+                    <div class="card card-shadow">
+                        <img src="img/hotel.jpg" alt="">
+                        <div class="card-body">
+                            <div class="service-heading text-center">Real-State</div>
+                            <p class="text-center">Find Your dream home or investment property with our extensive listings and experts agents</p>
+                            <a href="#">Explore <i class="bi bi-arrow-right-short"></i></a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Vehicles Category -->
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card category-card h-100 card-shadow">
-                        <div class="card-body text-center">
-                            <div class="category-icon mb-3">
-                                <i class="bi bi-car-front fs-1 text-primary"></i>
-                            </div>
-                            <h5 class="card-title">Vehicles</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="text-decoration-none text-muted">Cars</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Motorcycles</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Commercial</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Parts</a></li>
-                            </ul>
+                <!-- Furniture -->
+                <div class="col-lg-3 py-3">
+                    <div class="card card-shadow">
+                        <img src="img/furniture.jpg" alt="">
+                        <div class="card-body">
+                            <div class="service-heading text-center">Real-State</div>
+                            <p class="text-center">Find Your dream home or investment property with our extensive listings and experts agents</p>
+                            <a href="#">Explore <i class="bi bi-arrow-right-short"></i></a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Electronics Category -->
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card category-card h-100 card-shadow">
-                        <div class="card-body text-center">
-                            <div class="category-icon mb-3">
-                                <i class="bi bi-laptop fs-1 text-primary"></i>
-                            </div>
-                            <h5 class="card-title">Electronics</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="text-decoration-none text-muted">Phones</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Computers</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">TV & Audio</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Gaming</a></li>
-                            </ul>
+                <!-- Vehicles -->
+                <div class="col-lg-3 py-3">
+                    <div class="card card-shadow">
+                        <img src="img/real-state.jpg" alt="">
+                        <div class="card-body">
+                            <div class="service-heading text-center">Real-State</div>
+                            <p class="text-center">Find Your dream home or investment property with our extensive listings and experts agents</p>
+                            <a href="#">Explore <i class="bi bi-arrow-right-short"></i></a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Furniture Category -->
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card category-card h-100 card-shadow">
-                        <div class="card-body text-center">
-                            <div class="category-icon mb-3">
-                                <i class="bi bi-lamp fs-1 text-primary"></i>
-                            </div>
-                            <h5 class="card-title">Furniture</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="text-decoration-none text-muted">Living Room</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Bedroom</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Kitchen</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Office</a></li>
-                            </ul>
+                <!-- Consu;tency -->
+                <div class="col-lg-3 py-3">
+                    <div class="card card-shadow">
+                        <img src="img/real-state.jpg" alt="">
+                        <div class="card-body">
+                            <div class="service-heading text-center">Real-State</div>
+                            <p class="text-center">Find Your dream home or investment property with our extensive listings and experts agents</p>
+                            <a href="#">Explore <i class="bi bi-arrow-right-short"></i></a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Fashion Category -->
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card category-card h-100 card-shadow">
-                        <div class="card-body text-center">
-                            <div class="category-icon mb-3">
-                                <i class="bi bi-bag fs-1 text-primary"></i>
-                            </div>
-                            <h5 class="card-title">Fashion</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="text-decoration-none text-muted">Men's</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Women's</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Kids</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">Accessories</a></li>
-                            </ul>
+                <!-- Services -->
+                <div class="col-lg-3 py-3">
+                    <div class="card card-shadow">
+                        <img src="img/real-state.jpg" alt="">
+                        <div class="card-body">
+                            <div class="service-heading text-center">Real-State</div>
+                            <p class="text-center">Find Your dream home or investment property with our extensive listings and experts agents</p>
+                            <a href="#">Explore <i class="bi bi-arrow-right-short"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-
-
+            
         </div>
     </section>
 
@@ -724,7 +622,7 @@
     <!-- blog -->
     <section class="blog my-3">
         <div class="container">
-                <div class='category-heading'>Blog</div>
+            <div class='category-heading'>Blog</div>
 
             <div class="blog-articles my-3">
                 <div class=" card card-shadow card-first">

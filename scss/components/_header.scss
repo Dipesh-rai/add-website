@@ -1,180 +1,41 @@
-header {
-    width: 100%;
-
-    .topheader {
-        background-color: var(--background-color);
-        font-size: 13px;
-        font-family: var(--primary-fonts);
-        color: white;
-        flex-wrap: wrap;
-
-        label {
-            border-left: 1px solid white;
-            padding-left: 5px;
-        }
-
-        select {
-            background-color: transparent;
-            border: none;
-            color: white;
-
-        }
-
-        .topheader-section {
-
-            // Medium devices (tablets, 768px and up)
-            @media (max-width: 576px) {
-                flex-direction: column;
-                align-items: flex-start;
+header{
+    background-color:white;
+    padding:10px;
+    .header-top{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-heading{
+        font-size: var(--font-xl);
+        font-weight:800;
+        color:#387DC3;
+        z-index:20;
+    }
+    nav{
+        font-size: var(--font-md);
+        font-weight:400;
+        li{
+            text-transform: capitalize;
+            padding:5px 5px;
+            border-radius: 20px;
+            &.active{
+                background-color:rgba(192, 188, 188, 0.425);
+                color:var(--primary-color);
             }
         }
-    }
-
-    .second-header {
-        .logo {
-            font-size: var(--font-xl);
-            font-weight: 700;
-            line-height: 30px;
+        i{
+            font-size:var(--font-sm);
         }
-
     }
-
-    // X-Large devices (large desktops, 1200px and up)
-    @media (max-width: 1200px) {
-        width: 100%;
+    .login{
+        color:#387DC3;
     }
-
-    // Large devices (desktops, 992px and up)
-    @media (max-width: 992px) {}
-
-    // Medium devices (tablets, 768px and up)
-    @media (max-width: 768px) {
-        width: 100%;
-    }
-
-    // small devices (moibile, 576px and up)
-    @media (max-width: 576px) {
-        width: 100%;
-    }
+    
 }
-
-.third-header {
-    background-color: var(--background-color);
-
-    .right-header {
-        gap: 100px;
-        margin: 0;
-
-        .top-navbar {
-            ul {
-                padding: 0;
-                display: flex;
-                align-items: center;
-                margin-bottom: 0;
-                gap: 20px;
-
-                li {
-                    padding: 10px;
-                    color: white;
-                    font-size: var(--font-lg);
-                    text-wrap: none;
-                    position: relative;
-
-                    .submenu {
-                        position: absolute;
-                        top: 100%;
-                        left: 0;
-                        background: var(--background-color);
-                        display: none;
-                        padding: 10px 0;
-                        z-index: 100;
-
-                        ul {
-                            padding: 0;
-                            display: block;
-                            flex-direction: column;
-
-                            li {
-                                white-space: nowrap;
-                            }
-                        }
-
-                    }
-
-                    &:hover {
-                        background-color: var(--primary-color);
-
-                        .submenu {
-                            display: block;
-                        }
-                    }
-
-                    a {
-                        color: white;
-                    }
-                }
-            }
-        }
-
-        .search {
-            display: none !important;
-        }
-
-        .menu {
-            color: white;
-            display: none;
-            font-size: var(--font-lg);
-        }
-
-        // Medium devices (tablets, 768px and up)
-        @media (max-width: 768px) {
-
-            .top-navbar {
-                display: none;
-            }
-
-            .search {
-                display: grid !important;
-
-                input {
-                    width: 200px;
-                }
-            }
-
-            .menu {
-                display: block;
-            }
-        }
-    }
-
-    // Medium devices (tablets, 768px and up)
-    @media (max-width: 768px) {
-        padding: 10px 0;
-    }
-
+ul{
+    margin-bottom: 0 !important;
 }
-
-.scrolled {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--background-color); // or a different solid color
-    z-index: 999; // SUPER important
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); // slight drop shadow for depth
-    transition: all 0.3s ease-in-out;
+.text-white{
+    color:white !important;
 }
-
-// X-Large devices (large desktops, 1200px and up)
-@media (max-width: 1200px) {}
-
-// Large devices (desktops, 992px and up)
-@media (max-width: 992px) {}
-
-// Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {}
-
-
-
-// small devices (moibile, 576px and up)
-@media (max-width: 576px) {}

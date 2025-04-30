@@ -9,6 +9,32 @@
   max-width: 100%;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0; /* Ensure no margin */
+  padding: 0; /* Ensure no padding */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  font-family: var(--primary-fonts);
+}
+
+body {
+  font-size: 16px; /* Default font size */
+  background-color: #F8F9FA;
+  // Responsive font sizes for different screen widths
+  @media (max-width: 992px) { 
+    font-size: 14px; /* Font size for larger tablets and below */
+  }
+  
+  @media (max-width: 768px) { 
+    font-size: 13px; /* Font size for medium tablets and below */
+  }
+
+  @media (max-width: 576px) { 
+    font-size: 12px; /* Font size for smaller mobile screens */
+  }
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -32,39 +58,6 @@ a {
     text-decoration: none !important;
     color:inherit !important;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0; /* Ensure no margin */
-    padding: 0; /* Ensure no padding */
-    overflow-x: hidden; /* Prevent horizontal overflow */
-    font-family: var(--primary-fonts);
-    background-color: var(--white-color);
-  }
-  
-  body {
-    font-size: 16px; /* Default font size */
-    
-    // Responsive font sizes for different screen widths
-    @media (max-width: 992px) { 
-      font-size: 14px; /* Font size for larger tablets and below */
-    }
-    
-    @media (max-width: 768px) { 
-      font-size: 13px; /* Font size for medium tablets and below */
-    }
-  
-    @media (max-width: 576px) { 
-      font-size: 12px; /* Font size for smaller mobile screens */
-    }
-  }
 
 .font-sm{
   font-size:var(--font-sm);
@@ -231,7 +224,6 @@ p {
 }
 
 .card{
-  padding: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   z-index:10;
 }
@@ -255,11 +247,10 @@ p {
     overflow-x: hidden;
   }
   /* This part makes sure the full-width container is nice and spacious on large screens */
-.container {
-    width: 100%;
+.containerr {
+    width: 95% !important;
     margin: 0 auto;  /* Centering content */
-    padding: 0 20px; /* Default space on both sides for larger screens */
-  }
+   }
   
   /* Now, let's deal with the responsiveness and remove space for smaller screens */
   
