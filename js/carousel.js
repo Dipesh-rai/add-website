@@ -9,7 +9,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function(){
-    $(".home-carousel").owlCarousel({
+    $(".feature-carousel").owlCarousel({
       loop: true,
       margin: 10,
       nav: true,
@@ -37,7 +37,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $(".apartment-carousel").owlCarousel({
+    $(".job-carousel").owlCarousel({
       loop: true,
       margin: 10,
       nav: true,

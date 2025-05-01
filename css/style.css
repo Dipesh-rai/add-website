@@ -7,6 +7,10 @@
   --white-color:#F8F9FA;
   --footer-color:#212529;
   --extra-color:#33415C;
+  --dots-color: #8a888881;
+  --dots-active: #333;
+  --owl-color: #ffffff56;
+  --owl-hover: #869791;
   --primary-fonts:"Poppins", sans-serif;
   --font-sm: 0.75rem;
   --font-md: 0.875rem;
@@ -243,12 +247,6 @@ p {
   overflow-x: hidden;
 }
 
-/* This part makes sure the full-width container is nice and spacious on large screens */
-.containerr {
-  width: 95% !important;
-  margin: 0 auto; /* Centering content */
-}
-
 /* Now, let's deal with the responsiveness and remove space for smaller screens */
 @media (max-width: 1200px) {
   .container {
@@ -432,7 +430,8 @@ footer .footer-top ul {
   border-radius: 30px !important;
   font-weight: 600;
 }
-.banner .banner-article .first-banner .responsive .owl-prev, .banner .banner-article .first-banner .responsive .owl-next {
+.banner .banner-article .first-banner .responsive .owl-prev,
+.banner .banner-article .first-banner .responsive .owl-next {
   height: 50px;
   width: 50px;
   position: absolute;
@@ -448,16 +447,19 @@ footer .footer-top ul {
   transition: background 0.3s ease;
   cursor: pointer;
 }
-.banner .banner-article .first-banner .responsive .owl-prev:hover, .banner .banner-article .first-banner .responsive .owl-next:hover {
+.banner .banner-article .first-banner .responsive .owl-prev:hover,
+.banner .banner-article .first-banner .responsive .owl-next:hover {
   background: #869791 !important;
 }
-.banner .banner-article .first-banner .responsive .owl-prev svg, .banner .banner-article .first-banner .responsive .owl-next svg {
+.banner .banner-article .first-banner .responsive .owl-prev svg,
+.banner .banner-article .first-banner .responsive .owl-next svg {
   fill: none;
   stroke: #333;
   stroke-width: 2;
   transition: stroke 0.3s ease;
 }
-.banner .banner-article .first-banner .responsive .owl-prev:hover svg, .banner .banner-article .first-banner .responsive .owl-next:hover svg {
+.banner .banner-article .first-banner .responsive .owl-prev:hover svg,
+.banner .banner-article .first-banner .responsive .owl-next:hover svg {
   stroke: #fff;
 }
 .banner .banner-article .first-banner .responsive .owl-prev {
@@ -561,40 +563,46 @@ footer .footer-top ul {
   color: var(--primary-color) !important;
 }
 
-.home .nav li button {
-  font-size: var(--font-xl);
+.add {
+  background-color: var(--primary-color);
+  padding: 30px;
+  color: white;
+  border-radius: 10px;
 }
-.home .tab-content .tab-pane {
+.add .bttn {
+  display: block;
   width: 100%;
+  color: var(--primary-color);
 }
-.home .tab-content .tab-pane .home-carousel {
+
+.feature .feature-carousel {
   position: relative;
   padding: 20px 0;
   /* Position arrows */
 }
-.home .tab-content .tab-pane .home-carousel .slick-track {
-  display: flex;
-  gap: 10px;
+.feature .feature-carousel .owl-stage-outer {
+  padding: 10px 0 !important;
 }
-.home .tab-content .tab-pane .home-carousel .card {
+.feature .feature-carousel .card {
   margin-inline: 0;
 }
-.home .tab-content .tab-pane .home-carousel .card img {
+.feature .feature-carousel .card img {
   height: 250px;
 }
-.home .tab-content .tab-pane .home-carousel .card .card-text {
+.feature .feature-carousel .card .card-text {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.home .tab-content .tab-pane .home-carousel .owl-prev, .home .tab-content .tab-pane .home-carousel .owl-next {
+.feature .feature-carousel .owl-prev,
+.feature .feature-carousel .owl-next {
   height: 50px;
   width: 50px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #747070 !important;
+  background: var(--owl-color) !important;
   padding: 10px;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -604,23 +612,24 @@ footer .footer-top ul {
   transition: background 0.3s ease;
   cursor: pointer;
 }
-.home .tab-content .tab-pane .home-carousel .owl-prev:hover, .home .tab-content .tab-pane .home-carousel .owl-next:hover {
-  background: #869791 !important;
+.feature .feature-carousel .owl-prev:hover,
+.feature .feature-carousel .owl-next:hover {
+  background: var(--owl-hover) !important;
 }
-.home .tab-content .tab-pane .home-carousel .owl-prev {
+.feature .feature-carousel .owl-prev {
   left: -60px;
 }
-.home .tab-content .tab-pane .home-carousel .owl-next {
+.feature .feature-carousel .owl-next {
   right: -60px;
 }
-.home .tab-content .tab-pane .home-carousel .owl-dots {
+.feature .feature-carousel .owl-dots {
   position: absolute;
   bottom: -20px !important;
   left: 50% !important;
   transform: translateX(-50%);
 }
-.home .tab-content .tab-pane .home-carousel .owl-dots .owl-dot {
-  background: #8a8888 !important;
+.feature .feature-carousel .owl-dots .owl-dot {
+  background: var(--dots-color) !important;
   border: 1px solid #333;
   margin: 20px 5px 0px 0px;
   width: 10px;
@@ -629,34 +638,54 @@ footer .footer-top ul {
   display: inline-block;
   transition: background 0.3s ease;
 }
-.home .tab-content .tab-pane .home-carousel .owl-dots .owl-dot.active {
-  background: #333 !important;
+.feature .feature-carousel .owl-dots .owl-dot.active {
+  background: var(--dots-active) !important;
+}
+.feature .btttn {
+  display: block;
+  margin-inline: auto;
+  margin-top: 20px;
 }
 
-.apartment .apartment-carousel {
+.add-2 {
+  background-color: #5854EA;
+  padding: 30px;
+  color: white;
+  border-radius: 10px;
+}
+.add-2 button {
+  width: 100%;
+}
+
+.job .job-carousel {
   gap: 15px;
   position: relative;
+  padding: 20px 0;
   /* Position arrows */
 }
-.apartment .apartment-carousel .card {
+.job .job-carousel .owl-stage-outer {
+  padding: 10px 0 !important;
+}
+.job .job-carousel .card {
   margin-inline: 0;
 }
-.apartment .apartment-carousel .card img {
+.job .job-carousel .card img {
   height: 250px;
 }
-.apartment .apartment-carousel .card .card-body .card-text {
+.job .job-carousel .card .card-body .card-text {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.apartment .apartment-carousel .owl-prev, .apartment .apartment-carousel .owl-next {
+.job .job-carousel .owl-prev,
+.job .job-carousel .owl-next {
   height: 50px;
   width: 50px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #747070 !important;
+  background: var(--owl-color) !important;
   padding: 10px;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -666,23 +695,24 @@ footer .footer-top ul {
   transition: background 0.3s ease;
   cursor: pointer;
 }
-.apartment .apartment-carousel .owl-prev:hover, .apartment .apartment-carousel .owl-next:hover {
-  background: #869791 !important;
+.job .job-carousel .owl-prev:hover,
+.job .job-carousel .owl-next:hover {
+  background: var(--owl-hover) !important;
 }
-.apartment .apartment-carousel .owl-prev {
+.job .job-carousel .owl-prev {
   left: -60px;
 }
-.apartment .apartment-carousel .owl-next {
+.job .job-carousel .owl-next {
   right: -60px;
 }
-.apartment .apartment-carousel .owl-dots {
+.job .job-carousel .owl-dots {
   position: absolute;
   bottom: -20px !important;
   left: 50% !important;
   transform: translateX(-50%);
 }
-.apartment .apartment-carousel .owl-dots .owl-dot {
-  background: #8a8888 !important;
+.job .job-carousel .owl-dots .owl-dot {
+  background: var(--dots-color) !important;
   border: 1px solid #333;
   margin: 20px 5px 0px 0px;
   width: 10px;
@@ -691,34 +721,23 @@ footer .footer-top ul {
   display: inline-block;
   transition: background 0.3s ease;
 }
-.apartment .apartment-carousel .owl-dots .owl-dot.active {
-  background: #333 !important;
+.job .job-carousel .owl-dots .owl-dot.active {
+  background: var(--dots-active) !important;
 }
 
-.add {
-  padding: 30px;
-  background-color: var(--add-color);
+.travel .card img {
+  height: 250px;
 }
-.add article {
-  color: white;
-}
-.add article .add-text {
-  font-weight: 300;
-}
-
-.news img {
-  height: 200px;
-}
-.news .jobs {
-  display: flex;
-  gap: 10px;
-}
-@media (max-width: 768px) {
-  .news .jobs {
-    flex-wrap: wrap;
-  }
+.travel .card .card-body .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
+.news .card img {
+  height: 150px;
+}
 .blog .blog-articles {
   display: grid;
   grid-template-columns: 6fr 4fr 4fr;
@@ -784,7 +803,8 @@ footer .footer-top ul {
   border-radius: 50% !important;
   margin-inline: auto !important;
 }
-.testimonial-carousel .owl-prev, .testimonial-carousel .owl-next {
+.testimonial-carousel .owl-prev,
+.testimonial-carousel .owl-next {
   height: 50px;
   width: 50px;
   position: absolute;
@@ -800,7 +820,8 @@ footer .footer-top ul {
   transition: background 0.3s ease;
   cursor: pointer;
 }
-.testimonial-carousel .owl-prev:hover, .testimonial-carousel .owl-next:hover {
+.testimonial-carousel .owl-prev:hover,
+.testimonial-carousel .owl-next:hover {
   background: #869791 !important;
 }
 .testimonial-carousel .owl-prev {
@@ -842,10 +863,6 @@ footer .footer-top ul {
 .black-box .contact-page .name-section input {
   border: 1px solid blue;
   width: 100%;
-}
-
-.add {
-  margin-top: 40px !important;
 }
 
 @media (max-width: 576px) {

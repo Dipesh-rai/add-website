@@ -246,11 +246,7 @@ p {
     max-width: 100%;
     overflow-x: hidden;
   }
-  /* This part makes sure the full-width container is nice and spacious on large screens */
-.containerr {
-    width: 95% !important;
-    margin: 0 auto;  /* Centering content */
-   }
+
   
   /* Now, let's deal with the responsiveness and remove space for smaller screens */
   
