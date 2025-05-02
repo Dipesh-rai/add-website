@@ -808,6 +808,11 @@ footer .footer-top ul {
 .news .news-items .card img {
   height: 150px !important;
 }
+.news .btttn {
+  display: block;
+  margin-inline: auto;
+  margin-top: 30px;
+}
 
 .blog .blog-articles {
   display: grid;
@@ -927,25 +932,6 @@ footer .footer-top ul {
 }
 .testimonial-carousel .owl-dots .owl-dot.active {
   background: var(--dots-active) !important;
-}
-
-.black-box {
-  background-color: var(--primary-color);
-  color: white;
-}
-.black-box .contact-page {
-  padding: 20px;
-  width: 700px;
-  border: 1px solid black;
-  margin-inline: auto;
-}
-.black-box .contact-page .name-section {
-  width: 100%;
-  border: 1px solid red;
-}
-.black-box .contact-page .name-section input {
-  border: 1px solid blue;
-  width: 100%;
 }
 
 .subscribe {

@@ -576,6 +576,11 @@
             }
         }
     }
+    .btttn {
+        display: block;
+        margin-inline: auto;
+        margin-top: 30px;
+    }
 }
 
 .blog {
@@ -729,29 +734,6 @@
         background: var(--dots-active) !important;
     }
 }
-
-.black-box {
-    background-color: var(--primary-color);
-    color: white;
-
-    .contact-page {
-        padding: 20px;
-        width: 700px;
-        border: 1px solid black;
-        margin-inline: auto;
-
-        .name-section {
-            width: 100%;
-            border: 1px solid red;
-
-            input {
-                border: 1px solid blue;
-                width: 100%;
-            }
-        }
-    }
-}
-
 
 .subscribe {
     background-color: var(--primary-color);
