@@ -16,12 +16,29 @@ header{
         font-size: var(--font-md);
         font-weight:400;
         li{
+            position:relative;
             text-transform: capitalize;
             padding:5px 5px;
             border-radius: 20px;
+                ul{
+                    padding:0 10px;
+                    background-color: white;
+                    position:absolute;
+                    top:100%;
+                    left:0;
+                    display:flex;
+                    flex-direction: column;
+                    display:none;
+                    li{
+                        white-space: nowrap;
+                    }
+                }
             &:hover{
                 background-color:rgba(192, 188, 188, 0.425);
                 color:var(--primary-color);
+                ul{
+                    display:flex;
+                }
             }
             &.active{
                 background-color:rgba(192, 188, 188, 0.425);
