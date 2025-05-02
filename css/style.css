@@ -914,6 +914,7 @@ footer .footer-top ul {
 
 .black-box {
   background-color: var(--primary-color);
+  color: white;
 }
 .black-box .contact-page {
   padding: 20px;
@@ -930,10 +931,31 @@ footer .footer-top ul {
   width: 100%;
 }
 
-@media (max-width: 576px) {
-  .black-box {
-    width: 100%;
-  }
+.subscribe {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 30px;
+}
+.subscribe h2 {
+  font-size: 30px;
+}
+.subscribe .subscribe-items {
+  width: 350px;
+  margin-inline: auto;
+}
+.subscribe form input {
+  width: 400px;
+}
+.subscribe form input:focus-visible {
+  outline: none;
+}
+.subscribe form .bten {
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+}
+.subscribe form .bten:hover {
+  background-color: #2b2525;
 }
 
 .banner-travel .travel_tabs {
