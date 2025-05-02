@@ -956,6 +956,7 @@ footer .footer-top ul {
   padding: 5px 10px;
   background-color: #333;
   color: white;
+  border: none;
 }
 .subscribe form .bten:hover {
   background-color: #2b2525;
