@@ -292,6 +292,10 @@ header nav li {
   padding: 5px 5px;
   border-radius: 20px;
 }
+header nav li:hover {
+  background-color: rgba(192, 188, 188, 0.425);
+  color: var(--primary-color);
+}
 header nav li.active {
   background-color: rgba(192, 188, 188, 0.425);
   color: var(--primary-color);
