@@ -1,0 +1,41 @@
+.realstateitems {
+    .top-nav {
+        .nav {
+            .nav-item {
+                .nav-link {
+                    color: black;
+
+                    &.active {
+                        background-color: var(--nav-color) !important;
+                        color: var(--secondary-color);
+                    }
+                }
+            }
+        }
+    }
+
+    .deam {
+        border: 1px solid rgb(202, 200, 200);
+        font-size: var(--font-md);
+
+        &:focus-visible {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: rgb(148, 144, 144);
+        }
+    }
+
+    .search-realstate {
+        .location-state {
+            padding: 5px;
+            width: 120px;
+        }
+
+        .number-state {
+            width: 45px;
+            padding: 5px;
+        }
+    }
+}

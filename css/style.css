@@ -11,6 +11,7 @@
   --dots-active: #333;
   --owl-color: #ffffff56;
   --owl-hover: #869791;
+  --nav-color:#E3F2FD;
   --primary-fonts:"Poppins", sans-serif;
   --font-sm: 0.75rem;
   --font-md: 0.875rem;
@@ -82,6 +83,10 @@ ul {
 a {
   text-decoration: none !important;
   color: inherit !important;
+}
+
+.color-deam {
+  color: rgb(148, 144, 144);
 }
 
 .font-sm {
@@ -966,4 +971,30 @@ footer .footer-top ul {
 .banner-travel .travel_tabs {
   background: none;
   border: none;
+}
+
+.realstateitems .top-nav .nav .nav-item .nav-link {
+  color: black;
+}
+.realstateitems .top-nav .nav .nav-item .nav-link.active {
+  background-color: var(--nav-color) !important;
+  color: var(--secondary-color);
+}
+.realstateitems .deam {
+  border: 1px solid rgb(202, 200, 200);
+  font-size: var(--font-md);
+}
+.realstateitems .deam:focus-visible {
+  outline: none;
+}
+.realstateitems .deam::placeholder {
+  color: rgb(148, 144, 144);
+}
+.realstateitems .search-realstate .location-state {
+  padding: 5px;
+  width: 120px;
+}
+.realstateitems .search-realstate .number-state {
+  width: 45px;
+  padding: 5px;
 }/*# sourceMappingURL=style.css.map */
