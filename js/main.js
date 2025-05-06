@@ -1,4 +1,9 @@
 
+const close=document.getElementById("shownav")
+
+close.addEventListener(cancelIdleCallback, function () {
+  nav.classList.add("show");
+})
 
 // realstate products and pagination
 const propertiesPerPage = 6;

@@ -66,6 +66,19 @@ img {
   object-fit: cover;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+p {
+  margin-bottom: 0;
+}
+
 .author {
   height: 50px;
   width: 50px;
@@ -76,25 +89,12 @@ img {
   width: 130px;
 }
 
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none !important;
-  color: inherit !important;
-}
-
 .color-deam {
   color: rgb(148, 144, 144);
 }
 
 .font-sm {
   font-size: var(--font-sm);
-}
-
-p {
-  margin-bottom: 0;
 }
 
 .category-heading {
@@ -252,6 +252,10 @@ p {
   overflow-x: hidden;
 }
 
+.show {
+  display: block !important;
+}
+
 /* Now, let's deal with the responsiveness and remove space for smaller screens */
 @media (max-width: 1200px) {
   .container {
@@ -276,29 +280,39 @@ p {
 header {
   background-color: white;
   padding: 10px;
+  position: relative;
 }
 header .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .header-heading {
+header .header-top .header-heading {
   font-size: var(--font-xl);
   font-weight: 800;
   color: #387DC3;
   z-index: 20;
 }
-header nav {
+header .header-top .menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  header .header-top .menu {
+    display: block;
+  }
+}
+header .header-top nav {
   font-size: var(--font-md);
   font-weight: 400;
+  z-index: 100;
 }
-header nav li {
+header .header-top nav li {
   position: relative;
   text-transform: capitalize;
   padding: 5px 5px;
   border-radius: 20px;
 }
-header nav li ul {
+header .header-top nav li ul {
   padding: 0 10px;
   background-color: white;
   position: absolute;
@@ -308,25 +322,68 @@ header nav li ul {
   flex-direction: column;
   display: none;
 }
-header nav li ul li {
+header .header-top nav li ul li {
   white-space: nowrap;
 }
-header nav li:hover {
+header .header-top nav li:hover {
   background-color: rgba(192, 188, 188, 0.425);
   color: var(--primary-color);
 }
-header nav li:hover ul {
+header .header-top nav li:hover ul {
   display: flex;
 }
-header nav li.active {
+header .header-top nav li.active {
   background-color: rgba(192, 188, 188, 0.425);
   color: var(--primary-color);
 }
-header nav i {
+header .header-top nav .close {
+  display: none;
+}
+@media (max-width: 768px) {
+  header .header-top nav .close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+}
+header .header-top nav .close i {
   font-size: var(--font-sm);
 }
-header .login {
+@media (max-width: 768px) {
+  header .header-top nav .close {
+    display: none;
+    position: absolute;
+    padding: 20px 0;
+    top: 100%;
+    right: 0;
+    background-color: white;
+  }
+  header .header-top nav .close ul {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  header .header-top nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+  }
+  header .header-top nav ul {
+    background-color: white;
+    flex-direction: column;
+  }
+  header .header-top nav ul li ul {
+    position: relative;
+  }
+}
+header .header-top .login {
   color: #387DC3;
+}
+@media (max-width: 768px) {
+  header .header-top .login {
+    display: none;
+  }
 }
 
 ul {
